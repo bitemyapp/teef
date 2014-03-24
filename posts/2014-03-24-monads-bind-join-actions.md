@@ -170,6 +170,6 @@ True
 
 ```
 
-So in the case of lists, >>= is `concatMap`, or `flatMap` if you like. Beware, Monads are very general and widely applicable to things far different than nesting IO actions or flatMap'ing lists!
+So in the case of lists, `>>=` is `concatMap`, or `flatMap` if you like. Beware, Monads are very general and widely applicable to things far different than nesting IO actions or flatMap'ing lists!
 
 Don't let intuition and a vague feeling suffice, keep learning!

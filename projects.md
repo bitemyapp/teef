@@ -120,8 +120,8 @@ title: Projects
         <project>EditHero</project>
         Editing and proofreading as a service. I made this with an old friend
         and colleague because I couldn't seem to get my copy edited on the internet
-        without going through a lot of rigmarole.
-        <a href="https://www.edithero.com/" target="_blank">EditHero</a>
+        without going through a lot of rigmarole. It has since been shut down, due
+        to little in the way of revenue. Had a couple of happy, steady customers though.
       </li>
       <li>
         <project>SnappyWeather</project>

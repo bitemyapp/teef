@@ -57,7 +57,7 @@ Then on another hunch:
 
 So at this point I felt a little dumb, if you do too, it's okay.
 
-`>>= id` is just join. As demonstrated with lists:
+`>>= id` is just `join`. As demonstrated with lists:
 
 ``` haskell
 λ> [[1, 2, 3], [4, 5, 6]] >>= id

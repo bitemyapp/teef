@@ -122,13 +122,11 @@ Reminders/type cheat sheet:
 --- note how this looks a lot like >>= (bind) ?
 
 λ> :t (join .) . fmap
-(join .) . fmap
   :: (Monad m, Functor m) => (a1 -> m a) -> m a1 -> m a
 
 --- or simply flipped around:
   
  λ> :t (flip ((join .) . fmap))
-(flip ((join .) . fmap))
   :: (Monad m, Functor m) => m a1 -> (a1 -> m a) -> m a
 
 λ> (concat [[1, 2, 3], [4, 5, 6]]) == (join [[1, 2, 3], [4, 5, 6]])

@@ -13,15 +13,9 @@ footer {
 .no-padding {
     padding: 0;
 }
-.row, body, html {
-    min-width: 768px !important;
-}
 .post {
-    background: #F3F3F3;
-    padding: 20px 20px 20px 20px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    margin-bottom: 10px;
+    margin: 40px 40px 20px 40px;
+    max-width: 780px;
 }
 .post a {
     color: orangered;

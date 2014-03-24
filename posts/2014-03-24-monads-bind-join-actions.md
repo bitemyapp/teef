@@ -48,9 +48,16 @@ On a hunch, I broke out putStrLn into a separate bind (`>>=`) call, allowing me 
 {"took":11,"timed_out":false ...
 ```
 
+#### The above is the right answer!
+
+This is how you should write your code in real Haskell. Eliminating the unnecessary lifting was what I should've done to begin with.
+
+All of the code that follows this point is just from my wanting to explore the matter further and to try to get the lifted version to work properly for its own sake.
+
 Then on another hunch:
 
 ``` haskell
+--- This is bad, but works.
 λ> simpleHTTP (getRequest url) >>= (liftM putStrLn) . getResponseBody >>= id
 {"took":9,"timed_out":false ...
 ```
@@ -83,11 +90,33 @@ Let us query some types in our REPL again:
 --- this is the one that didn't work
 λ> :t (simpleHTTP (getRequest url) >>= (liftM putStrLn) . getResponseBody)
   :: IO (IO ())
+```
 
---- These two did
+Again, note the nested IO actions which are a sign we did something wrong. Our mistake was to `liftM`/`fmap` `putStrLn` instead of just binding it separately of `getResponseBody`. The nested and unevaluated `IO (IO ())` action led to the HTTP response not getting printed.
+
+``` haskell
+--- nota bene
+λ> :t putStrLn
+putStrLn :: String -> IO ()
+
+λ> :t ((liftM putStrLn) . getResponseBody)
+  :: Network.Stream.Result (Network.HTTP.Response String)
+     -> IO (IO ())
+
+λ> :t (getResponseBody)
+  :: Network.Stream.Result (Network.HTTP.Response ty) -> IO ty
+```
+
+With the above type signatures in mind:
+
+``` haskell
+--- These two *did* work!
+
+--- This is good code
 λ> :t (simpleHTTP (getRequest url) >>= getResponseBody >>= putStrLn)
   :: IO ()
 
+--- This is bad, but works. Included again to demonstrate a point.
 λ> :t (simpleHTTP (getRequest url) >>= (liftM putStrLn) . getResponseBody >>= id)
   :: IO ()
 ```
@@ -95,8 +124,7 @@ Let us query some types in our REPL again:
 Now for the grand reveal.
 
 ``` haskell
---- this works as well :)
-
+--- this works as well.
 λ> join $ simpleHTTP (getRequest url) >>= (liftM putStrLn) . getResponseBody
 {"took":4,"timed_out":false ...
 
@@ -104,7 +132,15 @@ Now for the grand reveal.
   :: IO ()
 ```
 
-`IO (IO ())` is usually a sign of a mistake in Haskell code and should be a build/lint failure `:)`. We don't force evaluation of the nested functions until we join.
+`IO (IO ())` is usually a sign of a mistake in Haskell code and should be a build/lint failure. We don't force evaluation of the nested function(s) until we use `join` to flatten the IO (IO ()) into IO ().
+
+But the code we really want to write is:
+
+``` haskell
+simpleHTTP (getRequest url) >>= getResponseBody >>= putStrLn
+```
+
+Don't nest and lift another IO action inside of an IO action, just bind.
 
 Reminders/type cheat sheet:
 

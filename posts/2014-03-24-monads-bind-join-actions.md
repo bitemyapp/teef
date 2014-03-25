@@ -13,20 +13,20 @@ let url = "http://localhost:9200/events/event/_search?q=port:3000&size=1"
 Importing the HTTP client library, a simple one based on IO. Also binding the query I want to perform, "find all documents with the field port equal to 3000, return 1 document".
 
 ``` haskell
-simpleHTTP (getRequest url) >>= (liftM putStrLn) . getResponseBody
+simpleHTTP (getRequest url) >>= liftM putStrLn . getResponseBody
 ```
 
 But that doesn't print anything. It type-checks too! Lets break it down.
 
 ``` haskell
-λ> :t (simpleHTTP (getRequest url))
+λ> :t simpleHTTP (getRequest url)
   :: IO (Network.Stream.Result (Network.HTTP.Response String))
 
-λ> :t (simpleHTTP (getRequest url) >>= getResponseBody)
+λ> :t simpleHTTP (getRequest url) >>= getResponseBody
   :: IO String
 ```
 
-Okay, so we've got a String inside the IO type. IO happens to implement the monad typeclass, so we should be able to `>>=` (bind) functions against it.
+So we've got an IO action returning a String. IO happens to implement the monad typeclass, so we should be able to `>>=` (bind) functions against it.
 
 For our purposes, `fmap` and `liftM` mean the same thing. Lifting a function to work on data inside the IO monad.
 
@@ -35,7 +35,7 @@ For our purposes, `fmap` and `liftM` mean the same thing. Lifting a function to 
 '{'
 λ> liftM head (simpleHTTP (getRequest url) >>= getResponseBody)
 '{'
-λ> :t (liftM head (simpleHTTP (getRequest url) >>= getResponseBody))
+λ> :t liftM head (simpleHTTP (getRequest url) >>= getResponseBody)
   :: IO Char
 ```
 
@@ -58,7 +58,7 @@ Then on another hunch:
 
 ``` haskell
 --- This is bad, but works.
-λ> simpleHTTP (getRequest url) >>= (liftM putStrLn) . getResponseBody >>= id
+λ> simpleHTTP (getRequest url) >>= liftM putStrLn . getResponseBody >>= id
 {"took":9,"timed_out":false ...
 ```
 
@@ -88,7 +88,7 @@ Let us query some types in our REPL again:
 
 ``` haskell
 --- this is the one that didn't work
-λ> :t (simpleHTTP (getRequest url) >>= (liftM putStrLn) . getResponseBody)
+λ> :t simpleHTTP (getRequest url) >>= liftM putStrLn . getResponseBody
   :: IO (IO ())
 ```
 
@@ -99,11 +99,11 @@ Again, note the nested IO actions which are a sign we did something wrong. Our m
 λ> :t putStrLn
 putStrLn :: String -> IO ()
 
-λ> :t ((liftM putStrLn) . getResponseBody)
+λ> :t (liftM putStrLn) . getResponseBody
   :: Network.Stream.Result (Network.HTTP.Response String)
      -> IO (IO ())
 
-λ> :t (getResponseBody)
+λ> :t getResponseBody
   :: Network.Stream.Result (Network.HTTP.Response ty) -> IO ty
 ```
 
@@ -113,11 +113,11 @@ With the above type signatures in mind:
 --- These two *did* work!
 
 --- This is good code
-λ> :t (simpleHTTP (getRequest url) >>= getResponseBody >>= putStrLn)
+λ> :t simpleHTTP (getRequest url) >>= getResponseBody >>= putStrLn
   :: IO ()
 
 --- This is bad, but works. Included again to demonstrate a point.
-λ> :t (simpleHTTP (getRequest url) >>= (liftM putStrLn) . getResponseBody >>= id)
+λ> :t simpleHTTP (getRequest url) >>= liftM putStrLn . getResponseBody >>= id
   :: IO ()
 ```
 
@@ -125,10 +125,10 @@ Now for the grand reveal.
 
 ``` haskell
 --- this works as well.
-λ> join $ simpleHTTP (getRequest url) >>= (liftM putStrLn) . getResponseBody
+λ> join $ simpleHTTP (getRequest url) >>= liftM putStrLn . getResponseBody
 {"took":4,"timed_out":false ...
 
-λ> :t (join $ simpleHTTP (getRequest url) >>= (liftM putStrLn) . getResponseBody)
+λ> :t join $ simpleHTTP (getRequest url) >>= liftM putStrLn . getResponseBody
   :: IO ()
 ```
 
@@ -162,10 +162,10 @@ Reminders/type cheat sheet:
 
 --- or simply flipped around:
   
- λ> :t (flip ((join .) . fmap))
+ λ> :t flip ((join .) . fmap)
   :: (Monad m, Functor m) => m a1 -> (a1 -> m a) -> m a
 
-λ> (concat [[1, 2, 3], [4, 5, 6]]) == (join [[1, 2, 3], [4, 5, 6]])
+λ> concat [[1, 2, 3], [4, 5, 6]] == join [[1, 2, 3], [4, 5, 6]]
 True
 
 ```

@@ -2,7 +2,7 @@
 title: Contact
 ---
 
-# The best ways to get in touch for learn more about me
+# The best ways to get in touch or learn more about me
 
 * [Github](github.com/bitemyapp/)
 

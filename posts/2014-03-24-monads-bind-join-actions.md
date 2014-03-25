@@ -26,7 +26,7 @@ But that doesn't print anything. It type-checks too! Lets break it down.
   :: IO String
 ```
 
-Okay, so we've got a String inside the IO monad.
+Okay, so we've got a String inside the IO type. IO happens to implement the monad typeclass, so we should be able to `>>=` (bind) functions against it.
 
 For our purposes, `fmap` and `liftM` mean the same thing. Lifting a function to work on data inside the IO monad.
 

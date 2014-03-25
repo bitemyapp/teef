@@ -172,4 +172,8 @@ True
 
 So in the case of lists, `>>=` is `concatMap`, or `flatMap` if you like. Beware, Monads are very general and widely applicable to things far different than nesting IO actions or flatMap'ing lists!
 
+Monads are *only* return, bind, and the three laws. A datatype that satisfies the laws with return and bind implemented is a monad. That's all that is required to be a valid Monad!
+
+See the [monad laws here](http://www.haskell.org/haskellwiki/Monad_laws).
+
 Don't let intuition and a vague feeling suffice, keep learning!

@@ -6,6 +6,7 @@ While playing around with querying [ElasticSearch](http://www.elasticsearch.org/
 
 ``` haskell
 import Network.HTTP
+import Control.Monad (join, liftM)
 
 let url = "http://localhost:9200/events/event/_search?q=port:3000&size=1"
 ```

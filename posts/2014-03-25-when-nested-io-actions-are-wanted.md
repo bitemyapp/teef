@@ -41,7 +41,7 @@ But there's a danger lurking deep...a dreaded space leak! Jack up n to a million
 
 Not a big deal though.
 
-If we example the [Hackage documentation for Data.IORef](http://hackage.haskell.org/package/base-4.6.0.1/docs/Data-IORef.html), we see that this very use-pattern has a warning attached. Namely:
+If we examine the [Hackage documentation for Data.IORef](http://hackage.haskell.org/package/base-4.6.0.1/docs/Data-IORef.html), we see that this very use-pattern has a warning attached. Namely:
 
 <hr>
 Mutate the contents of an IORef.

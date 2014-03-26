@@ -17,7 +17,7 @@ Importing the HTTP client library, a simple one based on IO. Also binding the qu
 simpleHTTP (getRequest url) >>= liftM putStrLn . getResponseBody
 ```
 
-But that doesn't print anything. It type-checks too! Lets break it down.
+But that doesn't print anything. It type-checks too! Let's break it down.
 
 ``` haskell
 λ> :t simpleHTTP (getRequest url)
@@ -171,9 +171,7 @@ True
 
 ```
 
-So in the case of lists, `>>=` is `concatMap`, or `flatMap` if you like. Beware, Monads are very general and widely applicable to things far different than nesting IO actions or flatMap'ing lists!
-
-The Monad typeclass in Haskell is *only* return, bind, and the three laws. A datatype that satisfies the laws with return and bind implemented is a monad. That's all that is required to be a valid typeclass instance of Monad!
+Reminder: The Monad typeclass in Haskell is *only* return, bind, and the three laws. A datatype that satisfies the laws with return and bind implemented is a monad. That's all that is required to be a valid typeclass instance of Monad!
 
 See the [monad laws here](http://www.haskell.org/haskellwiki/Monad_laws).
 

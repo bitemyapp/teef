@@ -9,25 +9,25 @@ title: Projects
         <project>Berossus</project>
         A Clojure service for querying and transacting into Datomic databases. Made at 
         Invitae with the assistance of my wonderful coworkers.
-        <a href="github.com/bitemyapp/berossus target="_blank">Berossus on Github</a>
+        <a href="http://github.com/bitemyapp/berossus" target="_blank">Berossus on Github</a>
       </li>
       <li>
         <project>Brambling</project>
         A Clojure library for managing migrations of Datomic databases. Currently the only
         way to do a full, arbitrary schema or data migration of a Datomic database.
-        <a href="github.com/bitemyapp/brambling" target="_blank">Brambling on Github</a>
+        <a href="http://github.com/bitemyapp/brambling" target="_blank">Brambling on Github</a>
       </li>
       <li>
         <project>Blackwater</project>
         A Clojure library for logging SQL queries and the time they
         took for Korma and clojure.java.jdbc. Modeled after the query logging in Rails.
-        <a href="github.com/bitemyapp/blackwater" target="_blank">Blackwater on Github</a>
+        <a href="http://github.com/bitemyapp/blackwater" target="_blank">Blackwater on Github</a>
       </li>
       <li>
         <project>Bulwark</project>
         A Clojure library for defending APIs and HTTP servers. Throttles requests to
         endpoints and allows you to ban IP addresses. Allows blacklisting and whitelisting.
-        <a href="github.com/bitemyapp/bulwark target="_blank">Bulwark on Github</a>
+        <a href="http://github.com/bitemyapp/bulwark" target="_blank">Bulwark on Github</a>
       </li>
       <li>
         <project>Scroot</project>
@@ -101,9 +101,9 @@ title: Projects
         concerning the DSL.
         <br><br>
         Currently the only RethinkDB client for Clojure.
-        <a href="github.com/bitemyapp/revise/" target="_blank">Revise on Github</a>
+        <a href="http://github.com/bitemyapp/revise/" target="_blank">Revise on Github</a>
         <br>
-        <a href="github.com/cesarbp/" target="_blank">The real genius behind Revise</a>
+        <a href="http://github.com/cesarbp/" target="_blank">The real genius behind Revise</a>
       </li>
       <li>
         <project>Korma</project>
@@ -113,7 +113,7 @@ title: Projects
         I also wrote and edited the Korma chapter in Clojure Cookbook along with
         Yogthos (Dmitri Sotnikov).
         <br><br>
-        <a href="sqlkorma.com" target="_blank">Korma's site</a>
+        <a href="http://sqlkorma.com" target="_blank">Korma's site</a>
         <a href="http://clojure-cookbook.com/" target="_blank">Clojure Cookbook</a>
       </li>
       <li>

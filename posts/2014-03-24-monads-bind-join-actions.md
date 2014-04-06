@@ -93,7 +93,7 @@ Let us query some types in our REPL again:
   :: IO (IO ())
 ```
 
-Again, note the nested IO actions which are a sign we did something wrong. Our mistake was to `liftM`/`fmap` `putStrLn` instead of just binding it separately of `getResponseBody`. The nested and unevaluated `IO (IO ())` action led to the HTTP response not getting printed.
+Our mistake was to `liftM`/`fmap` `putStrLn` instead of just binding it separately of `getResponseBody`. The nested and unevaluated `IO (IO ())` action led to the HTTP response not getting printed.
 
 ``` haskell
 --- nota bene
@@ -133,7 +133,7 @@ Now for the grand reveal.
   :: IO ()
 ```
 
-`IO (IO ())` is usually a sign of a mistake in Haskell code and should be a build/lint failure. We don't force evaluation of the nested function(s) until we use `join` to flatten the IO (IO ()) into IO ().
+`IO (IO ())` is sometimes a sign of a mistake in Haskell code. There are times it's needed, such as is demonstrated in my next blog post. We don't force evaluation of the nested function(s) until we use `join` to flatten the IO (IO ()) into IO ().
 
 But the code we really want to write is:
 
@@ -141,7 +141,7 @@ But the code we really want to write is:
 simpleHTTP (getRequest url) >>= getResponseBody >>= putStrLn
 ```
 
-Don't nest and lift another IO action inside of an IO action, just bind.
+Often you just want to bind.
 
 Reminders/type cheat sheet:
 

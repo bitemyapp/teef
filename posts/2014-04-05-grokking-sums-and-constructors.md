@@ -46,7 +46,7 @@ type Tree = [Fruit]
 data Fruit = Apple | Orange deriving (Show)
 ```
 
-How does one guarantee and verify (at the type level) that you can have a list of Apple's (`[Apple]`) only? Ordinarily, this faculty in the general case requires dependent types, but since our cardinality is constrained (as it was in the problem bringer's case) then we can use a fairly straightforward technique.
+How does one guarantee and verify (at the type level) that you can have a list of Apple's `[Apple]` only? Ordinarily, this faculty in the general case requires dependent types, but since our cardinality is constrained (as it was in the problem bringer's case) then we can use a fairly straightforward technique.
 
 Namely, we're going to take the value constructors (`Apple`, `Orange`) in the sum type `Fruit` and lift them into their own types. Then we're going to proxy the types from the sum type and provide a way to escape the sum type.
 
@@ -57,6 +57,7 @@ import Data.Maybe (catMaybes)
 --- new types lifted into being their own datatypes.
 --- The string field wasn't obligatory, it was so I could 
 --- distinguish values of the same type.
+
 data Apple = Apple String deriving (Show)
 data Orange = Orange String deriving (Show)
 
@@ -64,32 +65,39 @@ data Orange = Orange String deriving (Show)
 --- Instead of being nullary, they take a specific type as a parameter.
 --- So jamming something that isn't an Apple or an Orange
 --- in here still won't work.
+
 data Fruit = FruitApple Apple | FruitOrange Orange deriving (Show)
 
 --- one apple, one orange, these are the independent types embedded
 --- in the sum type members. That's why it's type [Fruit]
+
 exampleData :: [Fruit]
 exampleData = [FruitApple (Apple "wheeee"), FruitOrange (Orange "I can be ignored")]
 
 --- Maybe is a means of expressing generic non-determinism,
 --- which is what we have to cope with when we're plucking
 --- arbitrary members of a sum type out.
+
 discriminateApple :: Fruit -> Maybe Apple
 discriminateApple (FruitApple apple) = Just apple
 discriminateApple _ = Nothing
 
 -- voila!
 -- λ> :t (catMaybes $ fmap discriminateApple exampleData)
--- (catMaybes $ fmap discriminateApple exampleData) :: [Apple]
+
+convertedList :: [Apple]
+convertedList = catMaybes $ fmap discriminateApple exampleData
 
 -- this abuses the fail method in Monad, don't use this. The above is cleaner.
 -- λ> :t [x | FruitApple x <- exampleData ]
--- [x | FruitApple x <- exampleData ] :: [Apple]
+
+alternateMethod :: [Apple]
+alternateMethod = [x | FruitApple x <- exampleData]
 ```
 
 Okay so how precisely did this work?
 
-We went: `[Fruit] -> [Maybe Apple] -> [Apple]`, the only remaining source of non-determinism is the empty list case.
+We went: `[Fruit] -> [Maybe Apple] -> [Apple]`, the main remaining source of non-determinism is the empty list case.
 
 Nota bene: an alternative to discriminate apple is prisms
 from Edward Kmett's wonderful `lens` library. You can avoid

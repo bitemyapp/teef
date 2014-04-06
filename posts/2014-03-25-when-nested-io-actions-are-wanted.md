@@ -2,7 +2,7 @@
 title: Mutable closures in Haskell and nested IO
 ---
 
-In my [last post](/posts/2014-03-24-monads-bind-join-actions.html), I described IO (IO ()) as being a sign you might've made a mistake. I stand by this assertion, but there's a pattern (which if you've used Common Lisp, have surely seen before) which involves using a closed-over mutable reference for things like counters.
+In my [last post](/posts/2014-03-24-monads-bind-join-actions.html), I described IO (IO ()) as being a sign you might've made a mistake unless you knew it was what you wanted. There's are patterns which involve using a closed-over mutable reference for things like counters. This naturally leads to nested IO actions.
 
 Note for the new Haskell users: if you think you need this, you're wrong. You don't. There's probably a better way to do what you want. This is evil for evil's sake.
 

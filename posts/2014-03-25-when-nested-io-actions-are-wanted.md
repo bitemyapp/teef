@@ -15,8 +15,7 @@ import Data.IORef
 counter :: IO (IO (), IO Int)
 counter = do
   ref <- newIORef 0
-  let writer = do
-        modifyIORef ref (+1)
+  let writer = modifyIORef ref (+1)
   return (writer, readIORef ref)
 ```
 
@@ -54,15 +53,13 @@ To avoid this problem, use modifyIORef' instead.
 So with that in mind we make one simple change from:
 
 ``` haskell
-  let writer = do
-        modifyIORef ref (+1)
+  let writer = modifyIORef ref (+1)
 ```
 
 To
 
 ``` haskell
-  let writer = do
-        modifyIORef' ref (+1)
+  let writer = modifyIORef' ref (+1)
 ```
 
 And we get constant space usage. Delightful.

@@ -1,6 +1,6 @@
---
+---
 title: Grokking sum types, value constructors, and type constructors
---
+---
 
 Recently I had an experience where in the course of helping somebody with a problem, I developed an example that I thought would help people understand sum types, value constructors, and type constructors better.
 

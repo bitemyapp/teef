@@ -1,6 +1,6 @@
----
+--
 title: Grokking sum types, value constructors, and type constructors
----
+--
 
 Recently I had an experience where in the course of helping somebody with a problem, I developed an example that I thought would help people understand sum types, value constructors, and type constructors better.
 
@@ -8,17 +8,17 @@ To make this friendly for Haskell-naive folk out there, so here's a quick review
 
 ``` haskell
 
---- this defines a new data type Car.
+-- this defines a new data type Car.
 data Car = Car { manufacturer :: Manufacturer
                , maxSpeed     :: Int }
---- Car is both the type and value constructor.
---- Rule of thumb: 
---- left-hand side is type constructor
---- right-hand side is value constructor
+-- Car is both the type and value constructor.
+-- Rule of thumb: 
+-- left-hand side is type constructor
+-- right-hand side is value constructor
 
 data Manufacturer = Toyota | Honda | Ford | GM
---- sum type. The type constructor is Manufacturer.
---- The value constructors are Toyota, Honda, Ford, and GM.
+-- sum type. The type constructor is Manufacturer.
+-- The value constructors are Toyota, Honda, Ford, and GM.
 ```
 
 Remember, types are based on sets. Sets are collections of unique objects. One of the main things one is concerned with, with regard to sets, is cardinality. A set of 3 unique objects is for our purposes equivalent to a type with 3 inhabitants.
@@ -51,32 +51,32 @@ How does one guarantee and verify (at the type level) that you can have a list o
 Namely, we're going to take the value constructors (`Apple`, `Orange`) in the sum type `Fruit` and lift them into their own types. Then we're going to proxy the types from the sum type and provide a way to escape the sum type.
 
 ``` haskell
---- this is handy later :)
+-- this is handy later :)
 import Data.Maybe (catMaybes)
 
---- new types lifted into being their own datatypes.
---- The string field wasn't obligatory, it was so I could 
---- distinguish values of the same type.
+-- new types lifted into being their own datatypes.
+-- The string field wasn't obligatory, it was so I could 
+-- distinguish values of the same type.
 
 data Apple = Apple String deriving (Show)
 data Orange = Orange String deriving (Show)
 
---- This the sum type with the proxied value constructors.
---- Instead of being nullary, they take a specific type as a parameter.
---- So jamming something that isn't an Apple or an Orange
---- in here still won't work.
+-- This the sum type with the proxied value constructors.
+-- Instead of being nullary, they take a specific type as a parameter.
+-- So jamming something that isn't an Apple or an Orange
+-- in here still won't work.
 
 data Fruit = FruitApple Apple | FruitOrange Orange deriving (Show)
 
---- one apple, one orange, these are the independent types embedded
---- in the sum type members. That's why it's type [Fruit]
+-- one apple, one orange, these are the independent types embedded
+-- in the sum type members. That's why it's type [Fruit]
 
 exampleData :: [Fruit]
 exampleData = [FruitApple (Apple "wheeee"), FruitOrange (Orange "I can be ignored")]
 
---- Maybe is a means of expressing generic non-determinism,
---- which is what we have to cope with when we're plucking
---- arbitrary members of a sum type out.
+-- Maybe is a means of expressing generic non-determinism,
+-- which is what we have to cope with when we're plucking
+-- arbitrary members of a sum type out.
 
 discriminateApple :: Fruit -> Maybe Apple
 discriminateApple (FruitApple apple) = Just apple

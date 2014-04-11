@@ -15,7 +15,7 @@ instance ToJSON Query where
                     object ["value" .= termValue]]]
 ```
 
-This needed DRY'd up, so I decided to take advantage of the Monoid instance on lists to merge them after turning the Maybe valie into a 1 or 0 kv-pair list. I could probably be more clever about this, so if anybody has suggestions I'd like to hear them.
+This needed DRY'd up, so I decided to take advantage of the Monoid instance on lists to merge them after turning the Maybe value into a 1 or 0 kv-pair list. I could probably be more clever about this, so if anybody has suggestions I'd like to hear them.
 
 ``` haskell
 instance ToJSON Query where    

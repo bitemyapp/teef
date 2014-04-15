@@ -5,41 +5,35 @@ title: Projects
 # Stuff I've made
 
 <ul class="projects">
-
       <li>
         <project>Bloodhound</project>
         A Haskell client and DSL for querying, filtering, and indexing documents in Elasticsearch.
         <a href="http://github.com/bitemyapp/bloodhound target="_blank">Bloodhound on Github</a>
       </li>
-
       <li>
         <project>Berossus</project>
         A Clojure service for querying and transacting into Datomic databases. Made at 
         Invitae with the assistance of my wonderful coworkers.
         <a href="http://github.com/bitemyapp/berossus" target="_blank">Berossus on Github</a>
       </li>
-
       <li>
         <project>Brambling</project>
         A Clojure library for managing migrations of Datomic databases. Currently the only
         way to do a full, arbitrary schema or data migration of a Datomic database.
         <a href="http://github.com/bitemyapp/brambling" target="_blank">Brambling on Github</a>
       </li>
-
       <li>
         <project>Blackwater</project>
         A Clojure library for logging SQL queries and the time they
         took for Korma and clojure.java.jdbc. Modeled after the query logging in Rails.
         <a href="http://github.com/bitemyapp/blackwater" target="_blank">Blackwater on Github</a>
       </li>
-
       <li>
         <project>Bulwark</project>
         A Clojure library for defending APIs and HTTP servers. Throttles requests to
         endpoints and allows you to ban IP addresses. Allows blacklisting and whitelisting.
         <a href="http://github.com/bitemyapp/bulwark" target="_blank">Bulwark on Github</a>
       </li>
-
       <li>
         <project>Scroot</project>
         Funky Django hack. Makes version controlled
@@ -49,13 +43,11 @@ title: Projects
         real transactions. Done in a single weekend.
         <a href="http://github.com/bitemyapp/scroot/">Scroot on Github</a>
       </li>
-
       <li>
         <project>Neubite</project>
         Clojure CMS. Uses MongoDB for storage.
         <a href="http://github.com/bitemyapp/neubite/">Neubite on Github</a>
       </li>
-
       <li>
         <project>My Dotfiles</project>
         I often use this to teach people how to write Emacs
@@ -64,7 +56,6 @@ title: Projects
         there's a *nix.
         <a href="https://github.com/bitemyapp/dotfiles/">Github Page</a>
       </li>
-
       <li>
         <project>Github Dark Theme</project>
         Started from somebody else's work that I can't track down from awhile
@@ -72,7 +63,6 @@ title: Projects
         to not look horrible. Might need an update soon.
         <a href="https://github.com/bitemyapp/github-dark-theme">Github Page</a>
       </li>
-
       <li>
         <project>Clone of the original Hacker Typer.</project>
         Funny little hack to clone Hacker Typer for Emacs instead of the web. Mine involved a lot less code ;)
@@ -81,7 +71,6 @@ title: Projects
         </a>
         <a href="https://github.com/bitemyapp/hacker-type-emacs">Github Page</a>
       </li>
-
       <li>
         <project>Thodol Wiki</project>
         Quickie micro-wiki. I wrote it for a friend who wanted
@@ -89,7 +78,6 @@ title: Projects
         it in Clojure soon.
         <a href="https://github.com/bitemyapp/thodol">Github Page</a>
       </li>
-
       <li>
         <project>Django Pagination</project>
         Pagination for Django, forked because original
@@ -98,19 +86,15 @@ title: Projects
         shake-n-bake pagination module that worked.
         <a href="https://github.com/bitemyapp/pagination">Github Page</a>
       </li>
-
       <li>
         <project>Redoot</project>
         Reddit bot that gets you to buy crap from Woot!
         <a href="https://github.com/bitemyapp/redoot">Github Page</a>
       </li>
-
     </ul>
-
     <h2>
       Stuff I've worked on
     </h2>
-
     <ul class="projects">
       <li>
         <project>Revise</project>
@@ -125,7 +109,6 @@ title: Projects
         <br>
         <a href="http://github.com/cesarbp/" target="_blank">The real genius behind Revise</a>
       </li>
-
       <li>
         <project>Korma</project>
         SQL client library and DSL for Clojure. I am a maintainer of and contributor to
@@ -137,7 +120,6 @@ title: Projects
         <a href="http://sqlkorma.com" target="_blank">Korma's site</a>
         <a href="http://clojure-cookbook.com/" target="_blank">Clojure Cookbook</a>
       </li>
-
       <li>
         <project>EditHero</project>
         Editing and proofreading as a service. I made this with an old friend
@@ -145,14 +127,12 @@ title: Projects
         without going through a lot of rigmarole. It has since been shut down, due
         to little in the way of revenue. Had a couple of happy, steady customers though.
       </li>
-
       <li>
         <project>SnappyWeather</project>
         Simple weather app, created because Google took down the iGoogle weather API.
         The app itself is down, but the weather API and data is available as a service.
         <a href="mailto:cma@bitemyapp.com">Get in touch if you're interested.</a>
       </li>
-
       <li>
         <project>HNOfficeHours</project>
         Designed to allow people to offer advice/expertise, or seek

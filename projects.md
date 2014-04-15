@@ -8,7 +8,7 @@ title: Projects
       <li>
         <project>Bloodhound</project>
         A Haskell client and DSL for querying, filtering, and indexing documents in Elasticsearch.
-        <a href="http://github.com/bitemyapp/bloodhound target="_blank">Bloodhound on Github</a>
+        <a href="http://github.com/bitemyapp/bloodhound" target="_blank">Bloodhound on Github</a>
       </li>
       <li>
         <project>Berossus</project>

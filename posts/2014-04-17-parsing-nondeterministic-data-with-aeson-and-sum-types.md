@@ -89,7 +89,10 @@ instance FromJSON UmeWrapper where
 
 -- test data!
 
-testPayload = L.pack "[{\"name\": \"bite\", \"age\": 10.0}, {\"name\": \"Mortem3r\", \"company\": \"GameGrumps\"}, {\"name\": \"Arin\", \"company\": \"GameGrumps\", \"reports\": [{\"name\": \"Dan\", \"company\": \"GameGrumps\"}]}]"
+testPayload = L.pack "[{\"name\": \"bite\", \"age\": 10.0},
+                       {\"name\": \"Mortem3r\", \"company\": \"GameGrumps\"},
+                       {\"name\": \"Arin\", \"company\": \"GameGrumps\",
+                       \"reports\": [{\"name\": \"Dan\", \"company\": \"GameGrumps\"}]}]"
 
 main = print $ (eitherDecode testPayload :: Either String [UmeWrapper])
 
@@ -100,7 +103,15 @@ And the final result when we run main?
 ``` haskell
 
 λ> main
-Right [UmeUser (User {userName = "bite", userAge = 10}),UmeEmployee (Employee {employeeName = "Mortem3r", employeeCompany = "GameGrumps"}),UmeManager (Manager {managerName = "Arin", managerCompany = "GameGrumps", reports = [Employee {employeeName = "Dan", employeeCompany = "GameGrumps"}]})]
+Right [UmeUser (User {userName = "bite",
+                      userAge = 10}),
+       UmeEmployee (Employee {employeeName = "Mortem3r",
+                              employeeCompany = "GameGrumps"}),
+       UmeManager 
+         (Manager {managerName = "Arin",
+                   managerCompany = "GameGrumps",
+                   reports = [Employee {employeeName = "Dan",
+                                        employeeCompany = "GameGrumps"}]})]
 
 ```
 

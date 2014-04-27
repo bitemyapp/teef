@@ -32,10 +32,9 @@ data Status a = Status { ok      :: Bool
                        , version :: a
                        , tagline :: T.Text } deriving (Show)
 
-instance ToJSON Version
 instance FromJSON Version
 
-instance (FromJSON a, ToJSON a) => FromJSON (Status a) where
+instance (FromJSON a) => FromJSON (Status a) where
   parseJSON (Object v) = Status <$>
                          v .: "ok" <*>
                          v .: "status" <*>

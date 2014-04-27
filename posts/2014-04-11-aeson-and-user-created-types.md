@@ -26,12 +26,11 @@ data Version = Version { number          :: T.Text
                        , build_snapshot  :: Bool
                        , lucene_version  :: T.Text } deriving (Show, Generic)
 
-data (FromJSON a, ToJSON a) => Status a =
-                     Status { ok      :: Bool
-                            , status  :: Int
-                            , name    :: T.Text
-                            , version :: a
-                            , tagline :: T.Text } deriving (Show)
+data Status a = Status { ok      :: Bool
+                       , status  :: Int
+                       , name    :: T.Text
+                       , version :: a
+                       , tagline :: T.Text } deriving (Show)
 
 instance ToJSON Version
 instance FromJSON Version

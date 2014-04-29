@@ -266,7 +266,7 @@ I get it, you're threatened. Maybe you even staked some of your credibility on y
 
 I know I'd rather have a doctor who is willing to understand that he makes mistakes, will be responsive to new information, and even actively seek to expand his understanding rather than one that hunkers down with a pet theory.
 
-If it wasn't obvious, the story about people "good at math" that "do it in their head" versus the professional mathematicians is an analogy. It's also a true story. When you using a dynamically typed language, you're forcing yourself unnecessarily to do it "in your head". Thinking in terms of types is a different way of working, but it works.
+If it wasn't obvious, the story about people "good at math" that "do it in their head" versus the professional mathematicians is an analogy. It's also a true story. When you're using a dynamically typed language, you're forcing yourself unnecessarily to do it "in your head". Thinking in terms of types is a different way of working, but it works.
 
 Before you ask: Scala isn't good enough. 
 

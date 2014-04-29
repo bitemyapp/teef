@@ -4,6 +4,8 @@ title: Meditations on learning Haskell
 
 This is an extraction of a conversation between multiple Haskellers in an IRC channel. I'm not identifying who said what and the ordering will be more topical than temporal. I'll add annotations for context as appropriate. I edited liberally.
 
+The letters are individual people so you can follow the conversation. I did this less for anonymity and more to emphasize the ideas and experiences rather than the people sharing them.
+
 ## C
 One concern I have is some people I'm exposing to Haskell will hear of your exploits and then turn it into an "intrinsic smarts" rather than "effort and hard work" thing.
 
@@ -265,3 +267,9 @@ I get it, you're threatened. Maybe you even staked some of your credibility on y
 I know I'd rather have a doctor who is willing to understand that he makes mistakes, will be responsive to new information, and even actively seek to expand his understanding rather than one that hunkers down with a pet theory.
 
 If it wasn't obvious, the story about people "good at math" that "do it in their head" versus the professional mathematicians is an analogy. It's also a true story. When you using a dynamically typed language, you're forcing yourself unnecessarily to do it "in your head". Thinking in terms of types is a different way of working, but it works.
+
+Before you ask: Scala isn't good enough. 
+
+[Scala FP Book review](http://www.quora.com/Reviews-of-Functional-Programming-in-Scala-2013-book)
+
+[Summary of some of the problems](http://www.reddit.com/r/haskell/comments/1pjjy5/odersky_the_trouble_with_types_strange_loop_2013/cd3bgcu)

@@ -36,11 +36,6 @@ I routinely write code in Haskell that I am not smart enough to write.
 I just break it down into simple enough pieces and make the free theorems strong enough by using sufficiently abstract types that there is only one definition.
 
 
-## B
-
-Right - so just small steps and steady progress.
-
-
 ## E
 
 I don't write these stupidly general things because I'm smart. I write them that way so that they write themselves. It is just a case of setting up the questions and asking 'is this thing an instance of Foo?' 'what about that thing?' and just asking all the questions one after another until all the instances are there.

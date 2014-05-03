@@ -8,6 +8,16 @@ config :: Configuration
 config = defaultConfiguration
         { deployCommand = "rsync -avz -e ssh ./_site/ bitemyapp.com:/var/www/bitemyapp.com/"}
 
+feedConfig :: FeedConfiguration
+feedConfig = FeedConfiguration
+     { feedTitle       = "bitemyapp"
+     , feedDescription = "FP/Haskell blog"
+     , feedAuthorName  = "Chris Allen"
+     , feedAuthorEmail = "cma@bitemyapp.com"
+     , feedRoot        = "http://bitemyapp.com/"
+     }
+
+
 main :: IO ()
 main = hakyllWith config $ do
     match "images/*" $ do
@@ -28,8 +38,25 @@ main = hakyllWith config $ do
         route $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
+            >>= saveSnapshot "content"
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
+
+    create ["rss.xml"] $ do
+        route idRoute
+        compile $ do
+          let feedCtx = postCtx `mappend` bodyField "description"
+          posts <- fmap (take 10) . recentFirst =<<
+                   loadAllSnapshots "posts/*" "content"
+          renderRss feedConfig feedCtx posts
+
+    create ["atom.xml"] $ do
+        route idRoute
+        compile $ do
+          let feedCtx = postCtx `mappend` bodyField "description"
+          posts <- fmap (take 10) . recentFirst =<<
+                   loadAllSnapshots "posts/*" "content"
+          renderAtom feedConfig feedCtx posts
 
     create ["archive.html"] $ do
         route idRoute

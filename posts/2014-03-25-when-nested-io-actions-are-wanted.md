@@ -34,7 +34,7 @@ main = do
   replicateM_ 1000 $ incAndRead myCounter >>= print
 ```
 
-This successfully print 1-1000.
+This successfully prints 1-1000.
 
 But there's a danger lurking deep...a dreaded space leak! Jack up n to a million something and watch ghc churn heap like a farmer baling hay.
 
@@ -67,3 +67,19 @@ And we get constant space usage. Delightful.
 Fun Haskell note: the `'` (prime) version of a function in base will usually be the strict version. `_` means we're throwing the result away.
 
 So for those Lispers considering using Haskell, you can in fact reuse the side-effecty closure patterns you had before, you'll just get judged for it.
+
+### An atomically safe version of incAndRead
+
+Thanks to Axman6 for this idea:
+
+You can make incAndRead atomically safe (it currently isn't) by using atomicModifyIORef.
+
+``` haskell
+atomicModifyIORef' ref (\i -> (i+1,i))
+```
+
+Thanks for the feedback!
+
+### Optional reader exercise
+
+Write a small program that empirically proves the original incAndRead is unsafe.

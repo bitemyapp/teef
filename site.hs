@@ -17,7 +17,6 @@ feedConfig = FeedConfiguration
      , feedRoot        = "http://bitemyapp.com/"
      }
 
-
 main :: IO ()
 main = hakyllWith config $ do
     match "images/*" $ do

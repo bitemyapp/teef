@@ -18,7 +18,7 @@ Said he'd rather hire a bunch of 'dumb mathematicians' to work on a problem than
 
 As I'd always been the guy who could do everything in my head, and he was indirectly commenting on something I'd done.
 
-Well, you see, the guy who can do it all in his head never had to learn how to break a problem down into smaller parts. The less intelligent guys _had_ to as a survival trait. Learn how to break off some piece and solve it to make progress.
+Well, you see, the ones who can do it all in their head never had to learn how to break a problem down into smaller parts. The less intelligent ones _had_ to as a survival trait. Learn how to break off some piece and solve it to make progress.
 
 
 ## B
@@ -72,9 +72,9 @@ Incidentally, typeclasses are an interface (API) and some guarantees (laws).
 ## E
 
 I figured the answer to the smart vs. dumb mathematician dilemma was to take a smart
-mathematician and give him the dumb mathematicians' tools.
+mathematician and give them the dumb mathematicians' tools.
 
-Really that is a smart mathematician, the other guy is just a kid who is good
+Really that is a smart mathematician, the other one is just a kid who is good
 at calculus.
 
 

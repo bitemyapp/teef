@@ -6,7 +6,31 @@ Aeson is a real joy to use once you get into the swing of things, but
 there are some patterns out there that end-users are left to discover for
 themselves.
 
-Given a data-type like:
+First, a trivial example:
+
+```haskell
+
+data Filter = AndFilter [Filter] Cache
+
+instance ToJSON Filter where
+  toJSON (AndFilter filters cache) =
+
+    -- fmap toJSON over each Filter in the [Filter] of AndFilter  
+    object ["and"     .= fmap toJSON filters
+
+           -- (.=) :: ToJSON a => Data.Text.Internal.Text -> a -> Pair
+           -- type Pair = (Text, Value)
+           -- Value is the Aeson sum type encompassing all possible JSON values.
+           , "_cache" .= cache]
+```
+
+Okay, not bad! For other simpler examples also see:
+
+- [Parsing into sum types with Aeson](http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html)
+
+- [Parameterized structure with Aeson](http://bitemyapp.com/posts/2014-04-11-aeson-and-user-created-types.html)
+
+But given a less-nice data-type like:
 
 ```haskell
 data SimpleQueryStringQuery =
@@ -44,7 +68,7 @@ mField = fmap . (. toJSON) . (.=)
 catMaybes :: [Maybe a] -> [a]
 ```
 
-First, an aside. How is `catMaybes` even possible? e're conflating
+First, an aside. How is `catMaybes` even possible? We're conflating
 the possibility of `[Nothing, Nothing, ...]` with the empty list case `[]`.
 Anything `Just a` is kept.
 

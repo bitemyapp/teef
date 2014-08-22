@@ -25,7 +25,7 @@ randomElement l = SR.randomRIO (0, length l - 1) >>= return . (l !!)
 shortyGen = replicateM 7 (randomElement alphaNum)
 
 saveURI conn shortURI uri = R.runRedis conn $ R.set shortURI uri
-getURI conn shortURI = R.runRedis conn $ R.get shortURI
+getURI  conn shortURI     = R.runRedis conn $ R.get shortURI
 
 main = scotty 3000 $ do
   rConn <- liftIO (R.connect R.defaultConnectInfo)

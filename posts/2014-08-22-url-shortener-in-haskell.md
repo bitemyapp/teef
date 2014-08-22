@@ -20,7 +20,7 @@ import qualified System.Random as SR
 import Web.Scotty
 
 alphaNum = ['A'..'Z'] ++ ['0'..'9']
-randomElement l = SR.randomRIO (0, length l - 1) >>= return . (l !!)
+randomElement l = SR.randomRIO (0, ((length l) - 1)) >>= \d -> return (l !! d)
 
 shortyGen = replicateM 7 (randomElement alphaNum)
 

@@ -6,6 +6,12 @@ title: Projects
 
 <ul class="projects">
       <li>
+        <project>Blacktip</project>
+        A distributed Haskell library and soon also HTTP service for k-ordered unique ids.
+        Based on Boundary's Flake - but faster. :)
+        <a href="http://github.com/bitemyapp/blacktip" target="_blank">Blacktip on Github</a>
+      </li>
+      <li>
         <project>Bloodhound</project>
         A Haskell client and DSL for querying, filtering, and indexing documents in Elasticsearch.
         <a href="http://github.com/bitemyapp/bloodhound" target="_blank">Bloodhound on Github</a>

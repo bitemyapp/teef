@@ -2,7 +2,7 @@
 title: Parsing and rendering templates in Haskell
 ---
 
-yogthos' broken code
+[yogthos'](https://github.com/yogthos) code for a parser I was to replicate in Haskell
 
 ```clojure
 (ns parser)
@@ -31,7 +31,8 @@ yogthos' broken code
                      (= \} ch2))
         (.append buf ch1)
         (recur ch2 (read-char rdr))))
-    (let [content (->>  (.split (.toString buf ) " ") (remove empty?) (map (memfn trim)))]
+    (let [content (->>  (.split (.toString buf ) " ")
+                        (remove empty?) (map (memfn trim)))]
       (merge {:tag-type tag-type}
              (if (= :filter tag-type)
                {:tag-value (first content)}
@@ -88,50 +89,65 @@ Note this Clojure code doesn't actually work:
 The Haskell code below works. I included an alternate version of one of the parsers.
 
 ```haskell
-module Main where
+{-# LANGUAGE OverloadedStrings #-}
 
-import Control.Monad (replicateM)
-import Control.Monad.IO.Class (liftIO)
-import qualified Data.ByteString as BS
-import qualified Data.ByteString.Lazy as BL
-import qualified Data.ByteString.Char8 as BC
-import Data.Text.Encoding (decodeUtf8, encodeUtf8)
-import qualified Data.Text.Lazy as TL
-import qualified Database.Redis as R
-import Network.URI (parseURI)
-import qualified System.Random as SR
-import Web.Scotty
+module Text.Parser.Selmer where
 
-alphaNum = ['A'..'Z'] ++ ['0'..'9']
-randomElement l = SR.randomRIO (0, ((length l) - 1)) >>= \d -> return (l !! d)
+import Control.Applicative
+import Data.Attoparsec.Text
+import Data.Char (isAlpha)
+import Data.Maybe (fromMaybe)
+import Data.Monoid
+import Data.Text (Text)
+import qualified Data.Text.IO as TIO
+import Data.Map.Lazy (Map)
+import qualified Data.Map.Lazy as M
 
-shortyGen = replicateM 7 (randomElement alphaNum)
+newtype Var = Var Text deriving Show
 
-saveURI conn shortURI uri = R.runRedis conn $ R.set shortURI uri
-getURI  conn shortURI     = R.runRedis conn $ R.get shortURI
+data Node = VarNode Var | TextNode Text deriving Show
+type Context = (Map Text Text)
 
-main = scotty 3000 $ do
-  rConn <- liftIO (R.connect R.defaultConnectInfo)
-  get "/" $ do
-    uri <- param "uri"
-    case parseURI (TL.unpack uri) of
-      Just _  -> do
-        shawty <- liftIO shortyGen
-        let shorty = BC.pack shawty
-        resp <- liftIO (saveURI rConn shorty (encodeUtf8 (TL.toStrict uri)))
-        text $ TL.concat [(TL.pack (show resp)), " shorty is: ", TL.pack shawty]
-      Nothing -> text (TL.concat [uri, " wasn't a url"])
-  get "/:short" $ do
-    short <- param "short"
-    uri <- liftIO (getURI rConn short)
-    case uri of
-      Left reply -> text (TL.pack (show reply))
-      Right mbBS -> case mbBS of
-        Nothing -> text "uri not found"
-        Just bs -> html $ TL.concat ["<a href=\"", tbs, "\">", tbs, "</a>"]
-          where tbs = TL.fromStrict (decodeUtf8 bs)
+parseDoubleCurly :: Parser a -> Parser a
+parseDoubleCurly p = string "{{" *> p <* string "}}"
+
+-- parseVar :: Parser Var
+-- parseVar = do
+--   string "{{"
+--   name <- takeWhile1 isAlpha
+--   string "}}"
+--   return $ Var name
+
+parseVar :: Parser Var
+parseVar = parseDoubleCurly $ (Var <$> takeWhile1 isAlpha)
+
+parseNode :: Parser Node
+parseNode = TextNode <$> takeWhile1 (/= '{')
+
+parseStream :: Parser [Node]
+parseStream = many $ (parseNode <|> (VarNode <$> parseVar))
+
+renderNode :: Context -> Node -> Text
+renderNode ctx (VarNode (Var name)) = fromMaybe "" (M.lookup name ctx)
+renderNode ctx (TextNode txt) = txt
+
+render :: Context -> [Node] -> Text
+render context nodes = foldr
+       (\node extant ->
+         mappend (renderNode context node) extant)
+         "" nodes
+
+main = do
+  let context  = M.fromList [("blah", "1")]
+  let parser   = parseOnly parseStream
+  let template = "{{blah}} woot"
+  let maybeRendered = (render context <$> (parser template))
+  putStrLn (show maybeRendered)
+
 ```
 
 Success:
 
 <img src="/images/haskellparsesuccess.png"/>
+
+If I get a working version of the Clojure parser, I'll do a performance comparison.

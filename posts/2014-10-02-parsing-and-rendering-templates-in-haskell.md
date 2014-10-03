@@ -1,5 +1,5 @@
 ---
-title: Parsing and rendering templates in Haskell
+title: Parsing and rendering templates in Clojure & Haskell
 ---
 
 [yogthos'](https://github.com/yogthos) code for a parser I was to replicate in Haskell

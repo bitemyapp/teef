@@ -177,7 +177,10 @@ Prelude> let body = EmailBody "hi!"
 Prelude> let name = RecipientName "Levi"
 
 Prelude> mkEmail to from body name
-Just (Email {toAddress = ToAddress "levi@startup.com", fromAddress = FromAddress "chris@website.org", emailBody = EmailBody "hi!", recipientName = RecipientName "Levi"})
+Just (Email {toAddress = ToAddress "levi@startup.com",
+             fromAddress = FromAddress "chris@website.org",
+             emailBody = EmailBody "hi!",
+             recipientName = RecipientName "Levi"})
 
 Prelude> mkEmail (ToAddress "PLAID") from body name
 Nothing
@@ -218,7 +221,10 @@ Prelude> let body = EmailBody "hi!"
 Prelude> let name = RecipientName "Levi"
 
 Prelude> mkEmail to from body name
-Success (Email {toAddress = ToAddress "levi@startup.com", fromAddress = FromAddress "chris@website.org", emailBody = EmailBody "hi!", recipientName = RecipientName "Levi"})
+Success (Email {toAddress = ToAddress "levi@startup.com",
+                fromAddress = FromAddress "chris@website.org",
+                emailBody = EmailBody "hi!",
+                recipientName = RecipientName "Levi"})
 
 Prelude> mkEmail (ToAddress "PLAID") from body name
 Failure [ToAddressDidntParse]
@@ -354,7 +360,10 @@ Here's the result in our REPL:
 
 ```haskell
 Prelude> parseEmailJSON goodJson
-Success (Email {toAddress = ToAddress "levi@startup.com", fromAddress = FromAddress "chris@website.org", emailBody = EmailBody "hello!", recipientName = RecipientName "Levi"})
+Success (Email {toAddress = ToAddress "levi@startup.com",
+                fromAddress = FromAddress "chris@website.org",
+                emailBody = EmailBody "hello!",
+                recipientName = RecipientName "Levi"})
 
 Prelude> parseEmailJSON jsonMissingKey 
 Failure [BadJsonForEmail "key \"name\" not present"]

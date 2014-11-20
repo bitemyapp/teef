@@ -29,6 +29,8 @@ fromList [(1,100),(2,1)]
 fromList [(1,133)]
 ```
 
+<hr>
+
 My answer:
 
 ```haskell

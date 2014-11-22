@@ -4,9 +4,7 @@ title: About
 
 ## I'm a software business consultant and avid Haskell hacker
 
-I love building, working on, and marketing software products. Occasionally I post to my blog or announce a project.
-
-I'm into search engine marketing (PPC and SEO) optimization lately.
+I love building, working on, and marketing software products. Occasionally I post to my blog or announce a project. I teach & learn Haskell as well as work on Haskell libraries & infrastructure.
 
 ## You might want to work with me if
 

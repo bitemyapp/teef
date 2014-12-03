@@ -291,3 +291,86 @@ No, types do.
 
 I need more bourbon for this.
 
+> Using the LivingThing class for dragons is nice, but dragons have a lot of other qualities in addition to the ones provided by LivingThing. So you want to create a new Dragon class that will have member variables like airSpeed and breathType (which can be string such as 'fire', 'blizzard', 'lightning', 'poison gas', etc).
+
+Makes sense.
+
+> Since Dragon objects will also have health, magicPoints, inventory, and all the other things that LivingThing objects have, you could just create a new Dragon class and copy/paste all the code from your LivingThing class. But this would result in duplicate code, which is a Bad Thing.
+
+I understand objection to duplicate code but there are better ways than inheritance and overriding.
+
+> Instead, make a Dragon class that is a subclass of the LivingThing class:
+
+At least they didn't call it a subtype.
+ 
+```python
+class LivingThing():
+    # ...other code in the class...
+
+class Dragon(LivingThing):
+    # ...Dragon-specific code in the class...
+```
+
+My counter-part is getting lazy.
+
+> This is effectively saying, "A Dragon is the same as a LivingThing, with some additional methods and member variables".
+
+Yeeaaahhh...it never stops at "additional", you almost always end up overriding stuff and then it becomes a game of, "whose code is it anyway?" aka code ravioli.
+
+Anyway, in Haskell.
+
+```haskell
+data DragonBreath =
+    FireBreath
+  | IceBreath
+  | LightningBreath
+  | Halitosis
+  deriving (Eq, Show)
+
+data Dragon = Dragon {
+  livingData :: LivingThing
+  fireBreath :: DragonBreath
+  } deriving (Eq, Show)
+```
+
+> This principle is called subtype polymorphism.
+
+You don't have polymorphism or types, so all you have is a 'sub'...that can't swim.
+
+> In practice, inheritance is easy to abuse though.
+
+"In practice, this car may explode"
+
+Can't-miss-in-sub-type-land: Scalaz programmers running scared of co/contravariance when they're not devising Machiavellian power schemes to become Queen of Wish-we-were-writing-Haskell hill.
+
+> You must be certain that any conceivable change or update you make to the LivingThing class would also be something you would want the Dragon class and every other subclass of LivingThing to also have. This might not always be so straightforward.
+
+If only a computer program could tell us when we've failed to account for changes to our code...
+
+Djikstra's spinning so hard the Earth will be plunged into the daystar like we deserved all along.
+
+> For example, what if you created Monster and Hero subclasses of the LivingThing class, and then created FlyingMonster and MagicalMonster subclasses from Monster. Would the new Dragon class be a subclass of FlyingMonster or MagicalMonster? Or maybe just its own subclass of Monster?
+
+...
+
+> This is where inheritance and OOP start to get tricky and religious arguments over the "correct" way to design classes come about.
+
+I don't care for Smalltalk (TYYYYYYPES), but this is where Kay's quote about pop culture comes to mind.
+
+> I hate programming tutorials for beginners that start with object-oriented programming.
+
+We can elide the bit about "beginners" and "start".
+
+> OOP is a very abstract concept.
+
+It's a faux programmer religion with no foundations in anything principled. Insofar as Java and C++ lived up to true "OOP", if anything, they were doing their best to use the parts of programming language theory that actually *worked* in a practical sense and had proper foundations.
+
+There is an essential aspect to OOP that is useful and can be used in how we think about Haskell code.
+
+Want to know what I'm talking about? Read:
+
+1. [These slides](http://userpages.uni-koblenz.de/~laemmel/paradigms1011/resources/pdf/xproblem.pdf)
+
+2. [Wadler's Email](http://homepages.inf.ed.ac.uk/wadler/papers/expression/expression.txt)
+
+3. [If you dare](http://okmij.org/ftp/tagless-final/)

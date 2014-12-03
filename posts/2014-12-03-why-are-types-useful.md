@@ -2,9 +2,13 @@
 title: Why are types useful?
 ---
 
-This is a respin of: http://inventwithpython.com/blog/2014/12/02/why-is-object-oriented-programming-useful-with-an-role-playing-game-example/
+Rejected title: OOP is a Ford Pinto.
+
+[This is a respin.](http://inventwithpython.com/blog/2014/12/02/why-is-object-oriented-programming-useful-with-an-role-playing-game-example/)
 
 I am going to quote the author and their code examples then comment and show how I would do it in Haskell.
+
+Apologies upfront to the author and audience as I am using them as the whipping boy for some pet peeves of mine.
 
 > Taking out the graphics from these RPG video games, the characters, armor, and other objects are just a bunch of integer or string values in variables. Without using object-oriented concepts, you could implement these things in Python code like this:
 
@@ -341,13 +345,9 @@ You don't have polymorphism or types, so all you have is a 'sub'...that can't sw
 
 "In practice, this car may explode"
 
-Can't-miss-in-sub-type-land: Scalaz programmers running scared of co/contravariance when they're not devising Machiavellian power schemes to become Queen of Wish-we-were-writing-Haskell hill.
-
 > You must be certain that any conceivable change or update you make to the LivingThing class would also be something you would want the Dragon class and every other subclass of LivingThing to also have. This might not always be so straightforward.
 
-If only a computer program could tell us when we've failed to account for changes to our code...
-
-Djikstra's spinning so hard the Earth will be plunged into the daystar like we deserved all along.
+Djikstra's spinning so hard the Earth will be plunged into the daystar like we deserve.
 
 > For example, what if you created Monster and Hero subclasses of the LivingThing class, and then created FlyingMonster and MagicalMonster subclasses from Monster. Would the new Dragon class be a subclass of FlyingMonster or MagicalMonster? Or maybe just its own subclass of Monster?
 
@@ -355,11 +355,11 @@ Djikstra's spinning so hard the Earth will be plunged into the daystar like we d
 
 > This is where inheritance and OOP start to get tricky and religious arguments over the "correct" way to design classes come about.
 
-I don't care for Smalltalk (TYYYYYYPES), but this is where Kay's quote about pop culture comes to mind.
+I don't care for Smalltalk, but this is where Kay's quote about pop culture comes to mind.
 
 > I hate programming tutorials for beginners that start with object-oriented programming.
 
-We can elide the bit about "beginners" and "start".
+We can elide "beginners" and "start".
 
 > OOP is a very abstract concept.
 

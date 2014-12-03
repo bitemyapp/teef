@@ -13,6 +13,7 @@ Apologies upfront to the author and audience as I am using them as the whipping 
 > Taking out the graphics from these RPG video games, the characters, armor, and other objects are just a bunch of integer or string values in variables. Without using object-oriented concepts, you could implement these things in Python code like this:
 
 ```python
+# Python code
 name = 'Elsa'
 health = 50
 magicPoints = 80
@@ -24,6 +25,7 @@ print('The hero %s has %s health.' % (name, health))
 Just going to translate this. I did notice the author used camelBack case for `magicPoints` which is bad style in Python, good style in Haskell.
 
 ```haskell
+-- this is Haskell code yo.
 name = "Elsa"
 health = 50
 magicPoints = 80

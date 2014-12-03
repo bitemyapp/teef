@@ -363,7 +363,9 @@ We can elide "beginners" and "start".
 
 > OOP is a very abstract concept.
 
-It's a faux programmer religion with no foundations in anything principled. Insofar as Java and C++ lived up to true "OOP", if anything, they were doing their best to use the parts of programming language theory that actually *worked* in a practical sense and had proper foundations.
+It's a faux programmer religion with no foundations in anything principled. Insofar as Java and C++ failed to live up to true "OOP", they were doing their best to use the parts of established programming language theory that *worked* in a practical sense and had principled foundations.
+
+# All is not lost.
 
 There is an essential aspect to OOP that is useful and can be used in how we think about Haskell code.
 

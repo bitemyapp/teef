@@ -249,7 +249,7 @@ That was the code equivalent of when you want your parents to think you're eatin
 
 >Methods and member variables can be marked as public or private
 
-You can choose not to export the constructors of a data type, making it what Haskellers will call an *abstract data type*. This is almost always unnecessary in Haskell.
+You can choose not to export the constructors of a data type, making it what Haskellers call an *abstract data type*.
 
 > In some languages such as Java, this "can be called/set" is strictly enforced by the compiler. In Python, there's no such concept as "private" and "public". All methods and member variables are "public".
 

@@ -148,7 +148,8 @@ data LivingThing = LivingThing {
   , hunger :: Int
   } deriving (Eq, Show)
 
-mkLivingThing name health magicPoints inventory = LivingThing name health magicPoints inventory 0
+mkLivingThing name health magicPoints inventory =
+  LivingThing name health magicPoints inventory 0
 ```
 
 >Without changing any other line of code, every LivingThing object in your game now has a hunger level! You don't have to worry about some LivingThing objects having the hunger member variable and some not: the very definition of what a LivingThing is has been updated.

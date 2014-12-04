@@ -216,12 +216,13 @@ Yep. Here's the Haskell:
 data TheyDead = TheyDead deriving Show
 
 takeDamage :: Int -> LivingThing -> Either TheyDead LivingThing
-takeDamage dmg lt = undefined
+takeDamage dmg lt = if (newLt <= 0)
+                      then Left TheyDead
+                      else Right newLt
   where newLt = lt { health - dmg }
-        if (newLt < 0)
-          then Left TheyDead
-          else Right newLt
 ```
+
+Also not sure why original author did a <0 comparison...is 0 hp not dead?
 
 > However, the downside is that when your program grows in size, it's easy for takeDamage() to get lost in among them. It isn't so clear that takeDamage() is related to the LivingThing class. If you have hundreds of functions in your program, it will be hard to figure out which ones are related to the LivingThing class.
 

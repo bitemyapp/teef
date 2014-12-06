@@ -253,7 +253,7 @@ I still use Python and Clojure at work but I have no intention to do anything mo
 
 If you didn't catch the bit about Haskell have a very nice power-to-weight ratio, there's another point I'd like to make. I hear people using Clojure beg-off learning Haskell because they'd rather use a "real" type system such as Agda or Idris.
 
-This is created an excuse to not learn something new. You are delusional if you think learning (or for that matter *USING*) Agda or Idris is easier than Haskell. They're both nice languages for which you could find uses in production, but Haskell is ready here and now with a power-to-weight ratio that most dynlang users would appreciate.
+This is creating an excuse to not learn something new. You are delusional if you think learning (or for that matter *USING*) Agda or Idris is easier than Haskell. They're both nice languages for which you could find uses in production, but Haskell is ready here and now with a power-to-weight ratio that most dynlang users would appreciate.
 
 This is why I use Haskell. It's easier and enables me to do a better job. That's it. There's a ramp-up required in order to get started, but that can be ameliorated if you empty your mind and stop being in a rush.
 

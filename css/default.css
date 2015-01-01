@@ -1,5 +1,13 @@
+/* fonts */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Libre Baskerville'), url('//fonts/LibreBaskerville-Regular.otf') format('opentype');
+}
+
 body {
-	font-family: Helvetica, sans, sans-serif, Arial;
+	font-family: 'Libre Baskerville', georgia, serif;
 }
 footer {
 	text-align: center;
@@ -111,22 +119,42 @@ div.info {
     font-style: italic;
 }
 
-pre.sourceCode {
-    padding: 3px 10px 3px 10px;
-    background-color: #F5F5F5;
+.sourceCode {
+    font-family: 'Ubuntu Mono', monospace;
 }
 
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode, table.sourceCode pre
-   { margin: 0; padding: 0; border: 0; vertical-align: baseline; border: none; }
-td.lineNumbers { border-right: 1px solid #AAAAAA; text-align: right; color: #AAAAAA; padding-right: 5px; padding-left: 5px; }
+pre.sourceCode {
+    padding: 3px 10px 3px 10px;
+    background-color: #223;
+}
+
+table.sourceCode, tr.sourceCode,
+td.lineNumbers, td.sourceCode,
+table.sourceCode pre {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    border: none;
+}
+td.lineNumbers {
+    border-right: 1px solid #AAAAAA;
+    text-align: right;
+    color: #AAAAAA;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
 td.sourceCode { padding-left: 5px; }
 
+/* main text */
+code.sourceCode { color: #EEE; }
 /* keyword */
-.sourceCode span.kw { color: #53b238; font-weight: bold; }
-/* import target */
-.sourceCode span.dt { color: #384e31; }
+.sourceCode span.kw { color: #A04278; font-weight: bold; }
+/* import target, function name, constructors */
+.sourceCode span.dt { color: #38Ae31; }
 /* numbers/literals? */
-.sourceCode span.dv { color: #2e6161; }
+.sourceCode span.dv { color: #6eA1A1; }
 /* */
 .sourceCode span.bn { color: #40a070; }
 /* */
@@ -134,11 +162,11 @@ td.sourceCode { padding-left: 5px; }
 /* */
 .sourceCode span.ch { color: #4070a0; }
 /* string */
-.sourceCode span.st { color: #6356f0; }
-/* */
+.sourceCode span.st { color: #63A6f0; }
+/* comments */
 .sourceCode span.co { color: #60a0b0; font-style: italic; }
-/* */
-.sourceCode span.ot { color: #007020; }
+/* operators, accessors */
+.sourceCode span.ot { color: #A0F0A0; }
 /* */
 .sourceCode span.al { color: red; font-weight: bold; }
 /* function */
@@ -148,7 +176,21 @@ td.sourceCode { padding-left: 5px; }
 /* */
 .sourceCode span.er { color: red; font-weight: bold; }
 
+
 blockquote {
-  background-color: #eee;
+  background-color: #eef;
   padding: 3px 10px 3px 10px;
+}
+
+/* headers */
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
 }

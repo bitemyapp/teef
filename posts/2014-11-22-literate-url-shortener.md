@@ -2,6 +2,18 @@
 title: A URL shortener made literate
 ---
 
+### This is a literate respin of an older post of mine
+
+<a href="//posts/2014-08-22-url-shortener-in-haskell.html">The original code listing is here</a>
+
+<div class="left">
+## Explanation
+</div>
+
+<div class="right">
+## The code
+</div>
+
 <div class="pair">
 
 <div class="left">
@@ -206,7 +218,6 @@ Outside of any specific route handlers, we are cheating a bit and binding the da
 <div class="right">
 
 ```haskell
-
   get "/" $ do
 ```
 

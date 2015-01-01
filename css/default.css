@@ -9,9 +9,6 @@
 body {
 	font-family: 'Libre Baskerville', georgia, serif;
 }
-footer {
-	text-align: center;
-}
 #body {
 	height: 300px;
 }
@@ -96,6 +93,12 @@ div#header #navigation a {
     text-transform: uppercase;
 }
 
+footer {
+	text-align: center;
+}
+div.footer {
+    clear: both;
+}
 div#footer {
     border-top: solid 2px black;
     color: #555;
@@ -103,6 +106,7 @@ div#footer {
     margin-top: 30px;
     padding: 12px 0px 12px 0px;
     text-align: right;
+    clear: both;
 }
 
 h1 {
@@ -193,4 +197,24 @@ h2 {
 
 h3 {
     font-size: 16px;
+}
+
+/* side by side */
+
+div.pair {
+    width: 100%;
+    margin: 0;
+    clear: both;
+}
+
+div.left {
+    width: 45%;
+    float: left;
+    margin: 0px 10px 25px 0px;
+}
+
+div.right {
+    width: 45%;
+    float: right;
+    margin: 0px 10px 25px 0px;
 }

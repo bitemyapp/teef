@@ -91,11 +91,9 @@ title: Projects
   Reddit bot that gets you to buy crap from Woot!
   <a href="https://github.com/bitemyapp/redoot">Github Page</a>
 </li>
-ul>
-2>
-Stuff I've worked on
-h2>
-l class="projects">
+</ul>
+<h2>Stuff I've worked on</h2>
+<ul class="projects">
 <li>
   <project>Revise</project>
   RethinkDB client library and DSL for Clojure. I only did about 10% of the work,

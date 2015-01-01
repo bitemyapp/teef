@@ -40,7 +40,7 @@ I gather personal anecdotes on what material has worked for people, but weight t
 
 I want people to be able to use Haskell to make programs and to read other peoples' code. I am not addressing the needs of category theorists or compiler authors.
 
-I write programs for a living. Haskell makes my work pleasant and enables to me to do a better job.
+I write programs for a living. Haskell makes my work pleasant and enables me to do a better job.
 
 The way I teach is relatively principled, but it is a principled means to practical ends.
 

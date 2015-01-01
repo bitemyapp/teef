@@ -141,7 +141,9 @@ Explanations of folding isn't thorough and doesn't leave people with a strong in
 
 Explanation of IO is technically better than other materials but still wanting. The explanation is evocative of the underlying ST'ish tuple in Haskell implementations like GHC but still not to the point. Lacks explanatory power or justification.
 
-The point here about "explanatory power" is important. If you deliver your explanation of IO to a programmer and they can't tell me what adding `unsafePerformIO` or returning into IO (cf. `evaluate` in Criterion) will do to a Haskell program, then your explanation has failed at least from a practical point of view. I'm not even asking for `unsafeDupableIO`, `unsafeInterleaveIO`, or a deep comprehension of thunk blackholing. Just the basics of what purpose the `IO` type serves in a lazy programming language.
+The point here about "explanatory power" is important. If you deliver your explanation of IO to a programmer and they can't tell me what adding `unsafePerformIO` or returning into IO (cf. `evaluate` in Criterion) will do to a Haskell program, then your explanation has **failed**. You're better off handwaving IO completely than confusing the learners with faux-explanations. Learners can handle shrugging off "won't worry about it", they can't handle explanations that don't make sense, don't explain anything, and don't relate to anything they already know.
+
+I'm not asking for `unsafeDupableIO`, `unsafeInterleaveIO`, or a deep comprehension of thunk blackholing. Just the basics of what purpose the `IO` type serves in a lazy programming language.
 
 Doesn't cover what really trips people up with Haskell. This is serious. At the time Hutton wrote PiH, things like Applicative weren't known to us, but it's already all over the place as a pattern in Haskell because it's useful. These abstractions are often difficult for new Haskell programmers and must be covered.
 

@@ -4,7 +4,7 @@ title: A URL shortener made literate
 
 ### This is a literate respin of an older post of mine
 
-<a href="//posts/2014-08-22-url-shortener-in-haskell.html">The original code listing is here</a>
+<a href="/posts/2014-08-22-url-shortener-in-haskell.html">The original code listing is here</a>
 
 <div class="left">
 ## Explanation

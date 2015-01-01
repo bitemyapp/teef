@@ -20,7 +20,8 @@ body {
 }
 .post {
     margin: 40px 40px 20px 40px;
-    max-width: 1040px;
+    max-width: 960px;
+    line-height: 160%;
 }
 .post a {
     color: orangered;
@@ -36,6 +37,9 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: light-blue;
+}
+.post p {
+    max-width: 85%;
 }
 
 project {

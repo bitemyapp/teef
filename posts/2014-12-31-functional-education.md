@@ -350,7 +350,7 @@ Sweet explanations for GHC runtime system stuff by Edward Z. Yang.
 
 This is expressly an intermediate course, so I'm not docking points for not being an introduction. People should just know that it's more of a finishing course for people wanting to know practicalities and patterns in Haskell programming.
 
-The course has three labs then a final project. Smaller exercises were included in the in-person classes but I can't find any materials for them online, so self-learners seem to be out of luck there.
+The course has three labs then a final project. Smaller exercises were included in the slides.
 
 The first two labs seem quite forgiving, then difficulty skyrockets on the final lab.
 

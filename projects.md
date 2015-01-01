@@ -17,12 +17,6 @@ title: Projects
   <a href="http://github.com/bitemyapp/bloodhound" target="_blank">Bloodhound on Github</a>
 </li>
 <li>
-  <project>Berossus</project>
-  A Clojure service for querying and transacting into Datomic databases. Made at
-  Invitae with the assistance of my wonderful coworkers.
-  <a href="http://github.com/bitemyapp/berossus" target="_blank">Berossus on Github</a>
-</li>
-<li>
   <project>Brambling</project>
   A Clojure library for managing migrations of Datomic databases. Currently the only
   way to do a full, arbitrary schema or data migration of a Datomic database.

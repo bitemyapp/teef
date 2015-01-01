@@ -9,7 +9,7 @@ Rejected title: Focus on fixing things.
 
 There was a thread recently where a person was complaining about [LYAH](http://learnyouahaskell.com), [cis194](http://www.seas.upenn.edu/~cis194/spring13/index.html), the [Typeclassopedia](http://www.cs.tufts.edu/comp/150FP/archive/brent-yorgey/tc.pdf), [Real World Haskell](http://book.realworldhaskell.org/), and other materials for learning Haskell. Their post ended with, "So, as I apologize for what could easily be considered a rant, can anyone please point out a simple, error free, and intelligible haskell tutorial?".
 
-Well, it was indeed an unconstructive rant, but I don't entirely blame them. It took me a long time to get anywhere with understanding Haskell. Only after several years and and after I started teaching what I learned did I get any traction. There were several replies to the submitter of the thread. Not all of those replies were wrong. One of them mentioned "learning to learn". Programmers are usually bad at learning. Most schools will not teach people how to learn. That's at best a secondary side-effect that happens on accident with the more motivated students. Primarily, schools teach you how to pass tests.
+It was an unconstructive rant, but I don't blame them for being frustrated. It took me a long time to get anywhere with understanding Haskell. Only after several years and and after I started teaching what I learned did I get any traction. There were several replies to the submitter of the thread. Not all of those replies were wrong. One of them mentioned "learning to learn". Programmers are usually bad at learning. Most schools will not teach people how to learn. That's at best a secondary side-effect that happens on accident with the more motivated students. Primarily, schools teach you how to pass tests.
 
 So yes, the ranter needs to learn how to learn, but the materials they're being presented with aren't helping.
 
@@ -62,6 +62,8 @@ No exercises for Functor, which makes the Applicative homework that much harder.
 
 The explanations preceeding the exercises are, for obvious reasons, brief as they are designed for a classroom where students can ask questions.
 
+Doesn't explain higher kinded types too well. This can make things like `Either a` more mysterious than they need to be. I'm guessing the creator intended to explain things like this if they came up in the classroom.
+
 ### Do I recommend it?
 
 Yes! This, along with the NICTA course is the way I teach programmers Haskell. It precedes the NICTA course for reasons explained later.
@@ -96,7 +98,7 @@ One of the few materials to make a stab at avoiding the "multiple arguments" tra
 
 ### Weaknesses
 
-Deeply pedagogically unsound. The monkey-see monkey-do process is a good warm-up, not a good way to learn the entirety of Haskell. Desperately needs exercises where the student isn't shown the answer. Very little in the way of cogent explanations for most of the harder topics like Functor/Applicative/Monad.
+Deeply pedagogically unsound. The monkey-see monkey-do process is a warm-up, not an effective way to learn Haskell. Desperately needs exercises. Very little in the way of cogent explanations for any of the topics that learners struggle with (folding, functor, applicative, monad). This problem is worsened by the lack of exercises.
 
 Leans way too much on Functor/Applicative/Monad instances that lend themselves to bad intuitions. Does nothing to attempt to alienate these bad intuitions.
 
@@ -369,7 +371,7 @@ Dated. Monad explanation isn't well connected to Functor. I don't expect an F-A-
 
 ### Do I recommend it?
 
-Not as a primary course, only as something to be dipped into.
+No.
 
 
 ## Note about the Haskell Wikibook
@@ -393,7 +395,7 @@ cis194 -> NICTA course
 
 Use Craft of Functional Programming if you're new to programming, need a resource to check for basics, or need a warm-up for cis194.
 
-Do the Stanford CS240h course after cis194 and the NICTA course.
+Do the Stanford CS240h course after cis194 and the NICTA course if you're going to be using Haskell for work.
 
 
 ## What I'm doing about it

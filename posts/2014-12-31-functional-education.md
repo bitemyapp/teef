@@ -428,7 +428,7 @@ cis194 -> NICTA course
 
 Use Craft of Functional Programming if you're new to programming, need a resource to check for basics, or need a warm-up for cis194.
 
-Do the Stanford CS240h course after cis194 and the NICTA course if you're going to be using Haskell for work.
+Do the Stanford CS240h course after cis194 and the NICTA course if you're going to use Haskell for work.
 
 
 ## What I'm doing about it

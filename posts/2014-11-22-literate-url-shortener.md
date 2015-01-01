@@ -376,6 +376,15 @@ Now we need to handle the `Nothing` case from earlier. The `Nothing` case happen
 This is another http get request handler, but this time with a parameterized URL component which has the name `short`. This is so a request against `/EFG3YLB` will parse `EFG3YLB` as the param `short`.
 
 </div>
+
+<div class="right">
+
+```haskell
+  get "/:short" $ do
+```
+
+</div>
+
 </div>
 
 <div class="pair">
@@ -385,11 +394,6 @@ This is another http get request handler, but this time with a parameterized URL
 As before, `param` does a bit of magic for us. `param` checks multiple sources of arguments for us. Where previously we were getting a parameter from the HTTP GET arguments, this time it's a component of the request path.
 
 </div>
-
-<div class="right">
-
-```haskell
-  get "/:short" $ do
 
 <div class="right">
 

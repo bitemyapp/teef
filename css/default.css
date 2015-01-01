@@ -20,7 +20,7 @@ body {
 }
 .post {
     margin: 40px 40px 20px 40px;
-    max-width: 960px;
+    max-width: 1040px;
 }
 .post a {
     color: orangered;
@@ -202,19 +202,18 @@ h3 {
 /* side by side */
 
 div.pair {
-    width: 100%;
     margin: 0;
     clear: both;
 }
 
 div.left {
-    width: 45%;
+    width: 40%;
     float: left;
     margin: 0px 10px 25px 0px;
 }
 
 div.right {
-    width: 45%;
+    width: 55%;
     float: right;
     margin: 0px 10px 25px 0px;
 }

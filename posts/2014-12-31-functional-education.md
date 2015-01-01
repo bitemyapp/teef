@@ -435,6 +435,6 @@ Do the Stanford CS240h course after cis194 and the NICTA course if you're going 
 
 I'm writing [a book for learning Haskell](http://haskellbook.com). I have brought on [a coauthor who is a better writer than I am](https://superginbaby.wordpress.com/) and whose first time *ever* programming was in Haskell. She also spends a lot of time teaching, more than I do in fact, as she homeschools her children.
 
-We have very different and complementary backgrounds and strengths that I think are going to help us make a good book for learning Haskell. That said, while I hope the book will be the *best* way to learn Haskell when it is released, I'd rather it not stay at the top for very long.
+We have complementary backgrounds and strengths that I think are going to help us make a good book for learning Haskell. That said, while I hope the book will be the *best* way to learn Haskell when it is released, I'd rather it not stay at the top for very long.
 
 I want people to make better material!

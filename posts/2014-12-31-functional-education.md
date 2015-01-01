@@ -137,7 +137,7 @@ The notation used can confuse people new to Haskell and makes it difficult for t
 
 Assumes too much knowledge of math and mathematical notation.
 
-Explanations of folding isn't thorough and doesn't leave people with a strong intuition of what expressions a fold is equivalent to unless they're familiar with the mathematical notation used to introduce the topic.
+Explanation of folding isn't thorough and doesn't leave people with a strong intuition of what expressions a fold is equivalent to unless they're familiar with the mathematical notation used to introduce the topic.
 
 Explanation of IO is technically better than other materials but still wanting. The explanation is evocative of the underlying ST'ish tuple in Haskell implementations like GHC but still not to the point. Lacks explanatory power or justification.
 
@@ -350,7 +350,9 @@ Sweet explanations for GHC runtime system stuff by Edward Z. Yang.
 
 This is expressly an intermediate course, so I'm not docking points for not being an introduction. People should just know that it's more of a finishing course for people wanting to know practicalities and patterns in Haskell programming.
 
-The course has three labs then a final project. I don't have a lot to say about that. If it were up to me, there would be more, smaller exercises for demonstrating each topic but I don't think it's a serious issue. The labs seem quite forgiving, but I may have missed something.
+The course has three labs then a final project. Smaller exercises were included in the in-person classes but I can't find any materials for them online, so self-learners seem to be out of luck there.
+
+The first two labs seem quite forgiving, then difficulty skyrockets on the final lab.
 
 ### Do I recommend it?
 
@@ -438,3 +440,8 @@ I'm writing [a book for learning Haskell](http://haskellbook.com). I have brough
 We have complementary backgrounds and strengths that I think are going to help us make a good book for learning Haskell. While I hope the book will be the *best* way to learn Haskell when it is released, I'd rather it not stay at the top for very long.
 
 I want people to make better material!
+
+
+## Credits
+
+Thanks to Chris Copeland (@chrisncopeland on Twitter) for the additional information on CS240h!

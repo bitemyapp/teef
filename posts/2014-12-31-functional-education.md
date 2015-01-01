@@ -414,7 +414,7 @@ I am still reviewing and testing it. I will edit this post when I am comfortable
 
 How to learn Haskell as laid out [in my guide](https://github.com/bitemyapp/learnhaskell) is my recommendation. When I change my mind or discover better material I update the guide.
 
-It should not be missed that the best way to learn Haskell as an independent learner involves two courses that weren't even designed with independent learners in mind.
+It should not be missed that the best way to learn Haskell as an independent learner involves two courses that weren't even designed with independent learners in mind. I would note that both courses were written by people with a *lot of experience teaching*.
 
 Coverage of anything beyond, "what's a typeclass" is very poor. Mere *coverage* of basics is good, but the pedagogical quality is extremely lopsided. To get anything close to a reasonable course for learning just the *basics* of functional programming you'd have to cobble together material from at least 5 different sources.
 

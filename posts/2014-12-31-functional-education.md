@@ -7,7 +7,7 @@ Rejected title: Focus on fixing things.
 
 # The problem of learning functional programming
 
-There was a thread recently where a person was complaining about [LYAH](http://learnyouahaskell.com), [cis194](http://www.seas.upenn.edu/~cis194/spring13/index.html), the [Typeclassopedia](http://www.cs.tufts.edu/comp/150FP/archive/brent-yorgey/tc.pdf), [Real World Haskell](http://book.realworldhaskell.org/), and other materials for learning Haskell. Their post ended with, "So, as I apologize for what could easily be considered a rant, can anyone please point out a simple, error free, and intelligible haskell tutorial?".
+There was a thread recently where a person was complaining about [LYAH](http://learnyouahaskell.com), [cis194](http://www.seas.upenn.edu/~cis194/spring13/), the [Typeclassopedia](http://www.cs.tufts.edu/comp/150FP/archive/brent-yorgey/tc.pdf), [Real World Haskell](http://book.realworldhaskell.org/), and other materials for learning Haskell. Their post ended with, "So, as I apologize for what could easily be considered a rant, can anyone please point out a simple, error free, and intelligible haskell tutorial?".
 
 It was an unconstructive rant, but I don't blame them for being frustrated. It took me a long time to get anywhere with understanding Haskell. Only after several years and and after I started teaching what I learned did I get any traction. There were several replies to the submitter of the thread. Not all of those replies were wrong. One of them mentioned "learning to learn". Programmers are usually bad at learning. Most schools will not teach people how to learn. That's at best a secondary side-effect that happens on accident with the more motivated students. Primarily, schools teach you how to pass tests.
 
@@ -202,6 +202,8 @@ Recommended as a post-course review, not as an introduction to these typeclasses
 
 ## cis194 Fall 2014
 
+[http://www.seas.upenn.edu/~cis194/fall14/]()
+
 ### Strengths
 
 Still uses the Spring 2013 format.
@@ -376,6 +378,33 @@ Dated. Monad explanation isn't well connected to Functor. I don't expect an F-A-
 No.
 
 
+## Real World Haskell
+
+[http://book.realworldhaskell.org/]()
+
+### Strengths
+
+The method O'Sullivan used to motivate monads made me laugh and is pretty good. Demonstrates the ["Make a mess, clean it up!"](http://www.folklore.org/StoryView.py?story=Make_a_Mess,_Clean_it_Up!.txt) principle, which programmers would do well to use more.
+
+One of the only resources to cover monad transformers. Almost definitely the only one to talk about `mtl`.
+
+Touches on fmap/liftM/lift which is nice.
+
+### Weaknesses
+
+Way, way, way too many words covering too little code. This book is *exhausting* if you engage with it more deeply than skimming.
+
+Dated. A lot of code no longer works. Author is too busy to fix it. If I got pestered by the Haskell community as much as the author has, I wouldn't want to fix my book either.
+
+We still didn't know what Applicatives were when this book was published.
+
+Monad transformers chapter is harder to understand than it needs to be.
+
+### Do I recommend it?
+
+No, but the monad transformers chapter is worth reading as long as you don't expect anything to work.
+
+
 ## Note about the Haskell Wikibook
 
 I am still reviewing and testing it. I will edit this post when I am comfortable commenting on it.
@@ -386,6 +415,8 @@ I am still reviewing and testing it. I will edit this post when I am comfortable
 How to learn Haskell as laid out [in my guide](https://github.com/bitemyapp/learnhaskell) is my recommendation. When I change my mind or discover better material I update the guide.
 
 It should not be missed that the best way to learn Haskell as an independent learner involves two courses that weren't even designed with independent learners in mind.
+
+Coverage of anything beyond, "what's a typeclass" is very poor. Mere *coverage* of basics is good, but the pedagogical quality is extremely lopsided. To get anything close to a reasonable course for learning just the *basics* of functional programming you'd have to cobble together material from at least 5 different sources.
 
 We can do a lot better.
 

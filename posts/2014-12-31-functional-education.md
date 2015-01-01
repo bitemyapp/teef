@@ -50,7 +50,7 @@ The way I teach is relatively principled, but it is a principled means to practi
 
 ## cis194 Spring 2013
 
-[http://www.seas.upenn.edu/~cis194/spring13/]()
+[http://www.seas.upenn.edu/~cis194/spring13/](http://www.seas.upenn.edu/~cis194/spring13/)
 
 ### Strengths
 
@@ -71,7 +71,7 @@ Yes! This, along with the NICTA course is the way I teach programmers Haskell. I
 
 ## NICTA course
 
-[https://github.com/NICTA/course/]()
+[https://github.com/NICTA/course/](https://github.com/NICTA/course/)
 
 ### Strengths
 
@@ -88,7 +88,7 @@ Damn skippy. It's what I tell people to do after cis194 Spring 13.
 
 ## Learn You a Haskell
 
-[http://learnyouahaskell.com]()
+[http://learnyouahaskell.com](http://learnyouahaskell.com)
 
 ### Strengths
 
@@ -202,7 +202,7 @@ Recommended as a post-course review, not as an introduction to these typeclasses
 
 ## cis194 Fall 2014
 
-[http://www.seas.upenn.edu/~cis194/fall14/]()
+[http://www.seas.upenn.edu/~cis194/fall14/](http://www.seas.upenn.edu/~cis194/fall14/)
 
 ### Strengths
 
@@ -338,7 +338,7 @@ This book was published in 2014.
 
 ## Stanford CS240h Spring 2014
 
-[http://www.scs.stanford.edu/14sp-cs240h/]()
+[http://www.scs.stanford.edu/14sp-cs240h/](http://www.scs.stanford.edu/14sp-cs240h/)
 
 ### Strengths
 
@@ -359,7 +359,7 @@ Yes, but not as an introduction to *Haskell*, just as an introduction to post-fu
 
 ## Gentle Introduction to Haskell
 
-[https://www.haskell.org/tutorial/]()
+[https://www.haskell.org/tutorial/](https://www.haskell.org/tutorial/)
 
 ### Strengths
 
@@ -380,7 +380,7 @@ No.
 
 ## Real World Haskell
 
-[http://book.realworldhaskell.org/]()
+[http://book.realworldhaskell.org/](http://book.realworldhaskell.org/)
 
 ### Strengths
 

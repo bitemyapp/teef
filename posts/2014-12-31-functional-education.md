@@ -64,6 +64,8 @@ The explanations preceeding the exercises are, for obvious reasons, brief as the
 
 Doesn't explain higher kinded types too well. This can make things like `Either a` more mysterious than they need to be. I'm guessing the creator intended to explain things like this if they came up in the classroom.
 
+This is fast and it is difficult for many students. You'll want to fall back to materials with gentler introductions like Thompson's Craft of Functional Programming or get help from other people if you get stuck.
+
 ### Do I recommend it?
 
 Yes! This, along with the NICTA course is the way I teach programmers Haskell. It precedes the NICTA course for reasons explained later.
@@ -256,13 +258,13 @@ The DSL chapter is quite good and covers smart constructors.
 
 Time and space behavior chapter touches on some nice practicalities.
 
+Explains the relationship between testing, property testing, and proofs.
+
 ### Weaknesses
 
 Same coverage problems as we see elsewhere - doesn't go far enough for people to start understanding Haskell code written by Haskellers.
 
 Throw-away explanation of recursion.
-
-Doesn't explain what you have to do to make arbitrary code work in GHCi. This is bad.
 
 Time and space behavior is far too short and doesn't touch on knowledge that is portable and lasting. Bird's work on laziness and asymptotics in "Introduction to Functional Programming 2ed" is better.
 

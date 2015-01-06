@@ -324,6 +324,8 @@ Damnable IO/monad in the IO section. Same doesnt-explain-anything "IO is like yo
 
 Same coverage problems mentioned elsewhere. You still won't be able to understand most Haskell code written by non-undergrads after reading this book.
 
+Material is recycled from his "Introduction to Functional Programming using Haskell (Second Edition)", for an example look at "Evaluation", section 2.3 in this book, 1.2 in ItFPuH2ed.
+
 *Way* too much talking at the reader before they do exercises. You can't chuck an entire chapter of words at somebody and then bookend it with a long list of exercises. It's confusing, frustrating, boring, and forces a lot of flipping back and forth.
 
 The exercises for the "Efficiency" (covers laziness, space, time, sorting) chapter aren't good. There's no way for the learner to know if they got something right or wrong without looking at the answer. The learner should be able to build confidence in their answers experimentally.

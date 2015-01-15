@@ -6,11 +6,12 @@ This is a respin of [Levi Notik's article](http://levinotik.com/strong-types-and
 
 Quoting Levi Notik here because I whole-heartedly agree with him
 
-> The basic point that I hope to get across in this post (and the potential follow-ups) is > that by encoding our domain into strong types and avoiding side effects we can accomplish a few things:
+> The basic point that I hope to get across in this post (and the potential follow-ups) is
+> that by encoding our domain into strong types and avoiding side effects we can accomplish a few things:
 
-> * We can greatly limit the scope of our tests
-> * For the tests that still make sense to write, we can write very strong tests
-> * By using meaningful values and separating side-effecting functions from pure ones, we can more easily reason about our program
+> We can greatly limit the scope of our tests
+> For the tests that still make sense to write, we can write very strong tests
+> By using meaningful values and separating side-effecting functions from pure ones, we can more easily reason about our program
 
 Okay so what are we doing?
 
@@ -32,7 +33,7 @@ Well, this is not great. We can end up making mistakes like:
 ```haskell
 main = do
   sendEmail myEmail
-  where to   = levi@startup.com"
+  where to   = "levi@startup.com"
         from = "chris@website.org"
         body = "hi!"
         name = "Levi"

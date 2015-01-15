@@ -38,7 +38,7 @@ main = do
         body = "hi!"
         name = "Levi"
         -- I've mixed up the order of from & to!
-        myEmail = from to body name
+        myEmail = Email from to body name
         -- disastrous.
 ```
 

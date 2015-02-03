@@ -1,0 +1,76 @@
+==================================================================
+https://keybase.io/bitemyapp
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://bitemyapp.com
+  * I am bitemyapp (https://keybase.io/bitemyapp) on keybase.
+  * I have a public key with fingerprint DD0A 0F97 2700 6374 FBA6  1A5A F55B A1C6 EE59 691E
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.3"
+        },
+        "key": {
+            "fingerprint": "dd0a0f9727006374fba61a5af55ba1c6ee59691e",
+            "host": "keybase.io",
+            "key_id": "F55BA1C6EE59691E",
+            "uid": "488e9af4635c7a7c179f525379328800",
+            "username": "bitemyapp"
+        },
+        "merkle_root": {
+            "ctime": 1422937350,
+            "hash": "3f6edc26fce034c8cd50a10f3c154f3279204d5ee148136a1d46e050eab7e7d4f7696d47736ba4b47242aa283bb25a5ff3cd06faf14567a7a1b219be24951be5",
+            "seqno": 146744
+        },
+        "service": {
+            "hostname": "bitemyapp.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1422937392,
+    "expire_in": 157680000,
+    "prev": "c8977de127be5885e7399918c7acabb97f49113f7f5572cf254c0043d37436ef",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFdUn9oVlUY/r5ltqz8kUIIKXYTQZgf5/e558tkWotI3AhEyj+8nHPuOdt123e/
+7r2bfY31g6AUhmXQZNLYHylqiCsUVKgoIkjU5VSIQCeM0QhrxsIyI+3csaj875zz
+Pu9znud93ncfuqdQV/y978Kve15p48UzP6rC5vObQI+n4rDmlXs83RGZSpafKrLT
+eGWv3dSUTE0pildU4tCUtqcrZjENXrdJ0iiuOBQo8RL2ehtyeN5so0qrSapJlHN5
+YQgksIIjDgDDnFglGZRUWkqVhJoZQwUT0DjKtjjN/verN8MZRKF7fYbSDevhU6yp
+aQbf5GpdMwXi+0ZISximmkuuIReWIoq5wMj3AciBqUlmLakoM501Wa3mgjtN0t5h
+giSOZ1zrLMoxkCAkMMcUOEkybXNd2DITasSsNgAT7euQAgmBxRpSYjHiAgESUmMg
+8SFmEoaEGUCBkYobHhLLmWAh4RwzJYkiHBEkJfKxUohKah1RCJiVFhLKnAkJFYJC
+GUQEhcpQ5yE1L1XiXBzjhPTm96Q70ibXnc/tbnslHXe6rmoSZ7GOO1ypLcuq5dx1
+Vqvm0B1mWAWzLIGKKqGL7b+5Qge9ayICNXjm5WqUmCDKEZQzN2AA8n9Mt+PUvuA8
+NBBxJ9r3qXE9QkDfBaOlUoJbIiDElrv0OdIWUaIBIDh0i4GZsf/6JE6nbHWUadRa
+kVlXYrzeXcVH5xSKdYW599bli1uYd//Cf7Z5/sP33dlSGvh896Xjh08e6D6jjl0Z
+fvCUlcGp670DV778yv9i/Nv9Jx/5eergSMuaVzfuPDf32OBwecH4wAtzbk/v40u2
+r993aOkbH7TcfuBo9umbfV8/O7R4Z3Bz/PBnd1rX9bzzpN7xC7w19NfgZPnqx+23
+1oSjjwUjl1bXN1/+4639N+rqG1vG+tONP/2w8sDTW7M/V/a9vTfS80YnZf+kfOL4
+8scbG5evujx49tq5dR/5y3ZPPN8PlwxNbLq6Fg+s3frciydGFneMdV2cPLuhvhb4
+i0a2fff+e799XzzYNf/8RLpt4QlvtHnqCEGNR5ZOnR7bu7my6+aW680tN65NB+lr
+nyz7Zuz0IlHbo6Zf//Bv
+=WPfC
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bitemyapp
+
+==================================================================

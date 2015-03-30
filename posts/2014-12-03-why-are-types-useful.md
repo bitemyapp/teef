@@ -22,7 +22,7 @@ inventory = {'gold': 40, 'healing potion': 2, 'key': 1}
 print('The hero %s has %s health.' % (name, health))
 ```
 
-Just going to translate this. I did notice the author used camelBack case for `magicPoints` which is bad style in Python, good style in Haskell.
+Just going to translate this.
 
 ```haskell
 -- this is Haskell code yo.
@@ -52,7 +52,7 @@ main = putStrLn msg
               ++ " has "  ++ health
 ```
 
-Skipping the overwrought and plainly bad code.
+Skipping some code.
 
 > In fact, since the hero will have all the same features of monsters (health, inventory, etc.) we can just have a generic LivingThing class that the hero and monsters share. Your code can be changed to look like this:
 

@@ -20,7 +20,7 @@ But it failed, something about needing a C library. My next step was to Google s
 
 ![](/images/shu-thing-4.png)
 
-I chose the first link because it mentioned Gloss, which I know to be a Haskell library and thus likely relevant to my problem rather than a generic OpenGL issue. Realistically, any language would need to install the same OpenGL dependencies, but starting with the most specific questions/answers first is usually best.
+I chose the first link because it mentioned Gloss, which I know to be a Haskell library and thus likely relevant to my problem than a generic OpenGL issue. Realistically, any language would need to install the same OpenGL dependencies, but starting with the most specific questions/answers first is usually best.
 
 ![](/images/shu-thing-5.png)
 

@@ -32,7 +32,7 @@ This is me firing off those instructions.
 
 ![](/images/shu-thing-7.png)
 
-Then I re-ran the dependencies install with `cabal install --only-dependencies` because they was the last thing to fail, and it succeeded. Next step was to build the executable for Shu-thing itself with `cabal build`. This also succeeded and reached the linking stage, which also didn't fail.
+Then I re-ran the dependencies install with `cabal install --only-dependencies` because that was the last thing to fail, and it succeeded. Next step was to build the executable for Shu-thing itself with `cabal build`. This also succeeded and reached the linking stage, which also didn't fail.
 
 ![](/images/shu-thing-8.png)
 

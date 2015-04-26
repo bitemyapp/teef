@@ -24,7 +24,7 @@ I chose the first link because it mentioned Gloss, which I know to be a Haskell 
 
 ![](/images/shu-thing-5.png)
 
-There I saw instructions to install the appropriate GLUT dependencies for Debian/Ubuntu-alike distributions. I was using Ubuntu, so this suited me fine. This also matched what I knew about Shu-thing because its only dependency other than base was in fact GLUT.
+There I saw instructions to install the appropriate GLUT dependencies for Debian/Ubuntu-alike distributions. I was using Ubuntu, so this suited me fine. This also matched what I knew about Shu-thing [because its only dependency other than base was in fact GLUT](http://i.imgur.com/BzpUZqx.png).
 
 ![](/images/shu-thing-6.png)
 

@@ -37,3 +37,7 @@ Then I re-ran the dependencies install with `cabal install --only-dependencies` 
 ![](/images/shu-thing-8.png)
 
 Then I checked the game out which had a nifty wireframe aesthetic :)
+
+The point here is that I didn't know how to build this game or get it working 15 minutes before I started on this blog post and it wouldn't have done as much good to just dump a listing of instructions. Rather, it was more important "show my work", even if that entailed just googling for what dependencies I needed.
+
+Like the way I share stuff? I'm working on a book with [Julie Moronuki](https://superginbaby.wordpress.com/) who is also testing our book with her 10 year old son. Check out the [Haskell Programming book site](http://haskellbook.com/) to keep posted on what's going on. We've got a mailing list you can sign up for there.

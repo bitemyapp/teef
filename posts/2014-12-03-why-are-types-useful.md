@@ -216,10 +216,10 @@ Yep. Here's the Haskell:
 data TheyDead = TheyDead deriving Show
 
 takeDamage :: Int -> LivingThing -> Either TheyDead LivingThing
-takeDamage dmg lt = if (newLt <= 0)
+takeDamage dmg lt = if (health newLt <= 0)
                       then Left TheyDead
                       else Right newLt
-  where newLt = lt { health - dmg }
+  where newLt = lt { health = (health lt) - dmg }
 ```
 
 Also not sure why original author did a <0 comparison...is 0 hp not dead?

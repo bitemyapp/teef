@@ -219,7 +219,7 @@ takeDamage :: Int -> LivingThing -> Either TheyDead LivingThing
 takeDamage dmg lt = if (newLt <= 0)
                       then Left TheyDead
                       else Right newLt
-  where newLt = lt { health - dmg }
+  where newLt = lt { health = health - dmg }
 ```
 
 Also not sure why original author did a <0 comparison...is 0 hp not dead?

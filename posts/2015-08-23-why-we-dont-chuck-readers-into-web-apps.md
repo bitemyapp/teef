@@ -56,6 +56,10 @@ The combination of a meticulous pedagogy, assuming very little about the reader,
 
 That's fine, but you still have to learn the language before that even remotely makes sense. If you haven't learned Haskell, then you do not _by definition_ know how to learn Haskell. The approach we take is based on experience teaching people, and plunging into projects prematurely is a strong correlate for burning out and giving up.
 
+## So you're saying there aren't any projects in [Haskell Programming](http://haskellbook.com/)?
+
+No no, there *absolutely* are projects and as we complete more of the book, we'll add more! But we take a gradual and careful approach to them, introducing them only after you've learned the basics of the language. This makes it so you can focus on each step of the process. This also minimizes the amount of cargo-culting required to get a working project as well.
+
 ## Is there anything you could cut?
 
 We could cut the chapters on non-strictness and IO and it wouldn't bite into the core pedagogical goals, but I really wanted to address those topics as they are common but unnecessary sources of confusion and misunderstanding.

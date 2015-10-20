@@ -148,6 +148,8 @@ We can break it down as follows:
 
 ### Summary
 
-It does not matter whether one of your types is going to be in the Left or Right data constructor, all that matters is what you want your Functor-target to be. Not having a universal winner for Left or Right being the Functor target is bizarre and counter-productive. You can not and will not ever have a single Functor that lets you pick either/or of Left or Right because `a != b`. If that's what you want, what you want is Bifunctor or a prism.
+It does not matter whether one of your types is going to be in the Left or Right data constructor, all that matters is what you want your Functor-target to be. Not having a universal winner for Left or Right being the Functor target is bizarre and counter-productive. You can not and will not ever have a single Functor that lets you pick either/or of Left or Right because `a != b`.
+
+If you want to map over your "error" value, I have news for you! `Right` just became your error value. The names Left and Right _mean nothing_. The code is what it does. If you want to be able to arbitrarily pick Left, Right or both as a target, what you want is Bifunctor or a prism. It is _madness_ to give programmers an avenue to introduce useless arbitrariness to their code. Preventing the proliferation of meaningless difference is an excellent way for people doing PL to improve a language.
 
 We've covered both ways in which the Functor instance is not arbitrary, due to being both necessary and useful. We can also see that the way the Either Functor works is neither random nor based on whim.

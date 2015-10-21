@@ -123,3 +123,33 @@ Prelude> second length ("blah", "Papuchon")
 Or lenses! Whatever you like!
 
 The Functor and Foldable for Either and (,) can only ever do one useful thing. We may as well make it so we know exactly which type is being mapped over by looking at the type. What Functor and Foldable do, how they work, is essentially what the combination of higher kinded types and typeclasses into constructor classes _is for_. This is their purpose for existing. If you want to address more structure than what Functor/Foldable let you talk about, then use Bifunctor or Bifoldable. If you want to choose arbitrary targets, then use lenses and prisms. There's no reason to break the consistent and predictable semantics of the language because the (necessary by construction!) Functor instance for `Either` or `(,)` appears arbitrary to you. In fact, they're the complete opposite of arbitrary or contingent because their instances follow directly from how the datatypes are defined. This uniqueness and necessity is why we can have the `DeriveFunctor` and `DeriveFoldable` extensions which will generate Functor and Foldable instances knowing only the definition of a datatype.
+
+## Addendum
+
+It doesn't matter if the definition of Either was:
+
+```haskell
+data Either a b = Left b | Right a
+```
+
+It matters that a default exists and is chosen for the Functor because that's the only reason to make something Left or Right. Contrary to developer intuitions, Right doesn't mean "success". The data constructors of `Either` are defined by what the Functor/Applicative/etc. instances do.
+
+I've used `Left` to indicate "success" in situations where I want to stop fmap'ing a computation that might fail. It is the picking-of-a-winner that Haskell's semantics induce that is valuable and not arbitrary. What is arbitrary is what we call left and right and the syntactic position of their type arguments in the type constructor. There's much less utility in an Either that doesn't have a Functor with a default target.
+
+Further, they aren't arbitrary. Following from the definition of arbitrary that Google provided:
+
+> based on random choice or personal whim, rather than any reason or system.
+
+We can break it down as follows:
+
+1. Is there a reason the Either Functor works the way it does? Yes, it makes the datatype more useful in that it gives us a biased-choice Functor which is frequently useful regardless of whether the biased-target represents success or not. The way Functor behaves is useful insofar as its only reason for existing is to pick one of the two exclusive choices. There is no reason for programmers to favor the target being Left or Right. Those words mean nothing and word/name-fetishism kills software reuse and modularity.
+
+2. Is there a systematic cause for why the `Either` Functor works the way it does? Yes, cf. Jones' work on Gofer dating to 1993/1994. The way the Functor behaves is necessary and follows from how the language works in a natural way. You can make a learner predict what the `Either` Functor does if you teach them how HKTs and constructor classes work. I've done this with learners before. This isn't surprising if you know Haskell.
+
+### Summary
+
+It does not matter whether one of your types is going to be in the Left or Right data constructor, all that matters is what you want your Functor-target to be. Not having a universal winner for Left or Right being the Functor target is bizarre and counter-productive. You can not and will not ever have a single Functor that lets you pick either/or of Left or Right because `a != b`.
+
+If you want to map over your "error" value, I have news for you! `Right` just became your error value. The names Left and Right _mean nothing_. The code is what it does. If you want to be able to arbitrarily pick Left, Right or both as a target, what you want is Bifunctor or a prism. It is _madness_ to give programmers an avenue to introduce useless arbitrariness to their code. Preventing the proliferation of meaningless difference is an excellent way for people doing PL to improve a language.
+
+We've covered both ways in which the Functor instance is not arbitrary, due to being both necessary and useful. We can also see that the way the Either Functor works is neither random nor based on whim.

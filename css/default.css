@@ -3,7 +3,7 @@
   font-family: 'Libre Baskerville';
   font-style: normal;
   font-weight: normal;
-  src: local('Libre Baskerville'), url('//fonts/LibreBaskerville-Regular.otf') format('opentype');
+  src: local('Libre Baskerville'), url('/fonts/LibreBaskerville-Regular.otf') format('opentype');
 }
 
 body {

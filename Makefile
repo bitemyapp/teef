@@ -1,6 +1,6 @@
 all: deploy
 
-CMD=.stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/teef/teef
+CMD=stack exec -- teef
 
 cabal-build:
 	cabal clean

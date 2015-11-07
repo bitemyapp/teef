@@ -4,3 +4,4 @@ _cache/
 _site/
 .cabal-sandbox/
 .DS_Store
+.stack-work/

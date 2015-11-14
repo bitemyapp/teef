@@ -1,9 +1,9 @@
 /* fonts */
 @font-face {
   font-family: 'Libre Baskerville';
+  src: local('Libre Baskerville'), url('/fonts/LibreBaskerville-Regular.otf') format('opentype');
   font-style: normal;
   font-weight: normal;
-  src: local('Libre Baskerville'), url('/fonts/LibreBaskerville-Regular.otf') format('opentype');
 }
 
 body {

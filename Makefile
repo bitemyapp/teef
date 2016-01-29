@@ -2,9 +2,8 @@ all: deploy
 
 CMD=stack exec -- teef
 
-cabal-build:
-	cabal clean
-	cabal build
+stack-build:
+	stack build
 
 clean:
 	${CMD} clean

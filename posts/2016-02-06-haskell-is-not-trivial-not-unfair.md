@@ -100,7 +100,7 @@ If you want to and you wanted a package for this, sure. I'll typically use a [st
 
 >...author struggles with HTTP only supporting HTTP...
 
-[wreq](http://www.serpentine.com/wreq/tutorial.html) and [http-client-tls](https://hackage.haskell.org/package/http-client-tls) support HTTPS out of the box. YMMV. There's a reason I don't really recommend older Haskell libraries even if they're maintained. The foundation of them is http-client and it's a pretty popular library to use. It's used in [http-conduit](https://hackage.haskell.org/package/http-conduit) and [pipes-http](https://hackage.haskell.org/package/pipes-http) as well. The latter of which is a single 130 line module that has required almost zero maintenance in the past two years to add pipes streaming support to http-client.
+[wreq](http://www.serpentine.com/wreq/tutorial.html) and [http-client-tls](https://hackage.haskell.org/package/http-client-tls) support HTTPS out of the box. YMMV. There's a reason I don't really recommend older Haskell libraries even if they're maintained. The foundation of many libraries is http-client and it's a pretty popular library to use. It's used in [http-conduit](https://hackage.haskell.org/package/http-conduit) and [pipes-http](https://hackage.haskell.org/package/pipes-http) as well. The latter of which is a single 130 line module that has required almost zero maintenance in the past two years to add pipes streaming support to http-client. Things that use http-client are generally nice but you'll often want to use something higher level than http-client itself, such as wreq.
 
 >Author moves on to use http-conduit, which uses http-client-tls under the hood
 

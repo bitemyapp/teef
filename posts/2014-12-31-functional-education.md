@@ -4,6 +4,9 @@ title: Functional Education
 
 Rejected title: Focus on fixing things.
 
+# Here because you're wondering how to learn Haskell?
+
+My coauthor [Julie Moronuki](https://superginbaby.wordpress.com/) and I have been writing [a Haskell book named Haskell Programming from first principles](http://haskellbook.com/). We think it's the easiest and most comprehensive way to learn Haskell if you're willing to get a book. You can check out what others have thought of it in these [reviews of the Haskell book](http://haskellbook.com/feedback.html). If you're just plain curious, what follows below is a somewhat brutal evaluation of what was available at the time (December 2014) I wrote this post. Hopefully it'll explain why I chose to write a rather long book with Julie.
 
 # The problem of learning functional programming
 

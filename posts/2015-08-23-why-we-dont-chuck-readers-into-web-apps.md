@@ -32,7 +32,7 @@ The internet does, indeed, have many monad tutorials. People struggle with monad
 
 In our book, by the time you get to monads, you understand all those foundations well enough that monads themselves aren't that hard. When you understand the monads, then you can work up to understanding monad transformers and, ultimately, Scotty. But the awesome part is, you won't _only_ be able to understand and work with Scotty then. Having that real understanding gives you the ability to understand _so many_ Haskell libraries that rely on monads, Reader, and monad transformers. It's a whole new universe, because you didn't cargo cult to start with.
 
-## Why can't I learn Haskell the way I learned $BOZOLANG?
+## Why can't I learn Haskell the way I learned $BOGOLANG?
 
 Because `$BOZOLANG` is just like every other language you've already learned. Hash-mappy/stringy/numby/mutatey whatevers.
 

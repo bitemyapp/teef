@@ -34,7 +34,7 @@ In our book, by the time you get to monads, you understand all those foundations
 
 ## Why can't I learn Haskell the way I learned $BOGOLANG?
 
-Because `$BOZOLANG` is just like every other language you've already learned. Hash-mappy/stringy/numby/mutatey whatevers.
+Because `$BOGOLANG` is just like every other language you've already learned. Hash-mappy/stringy/numby/mutatey whatevers.
 
 ## But why does Haskell take so long to learn?
 

@@ -6,7 +6,7 @@ import Hakyll.Core.Configuration
 
 config :: Configuration
 config = defaultConfiguration
-        { deployCommand = "rsync -avz -e ssh ./_site/ bitemyapp.com:/var/www/bitemyapp.com/"}
+        { deployCommand = "rsync -avz -e ssh ./_site/ bitemyapp.com:/var/www/bitemyapp.com/" }
 
 feedConfig :: FeedConfiguration
 feedConfig = FeedConfiguration

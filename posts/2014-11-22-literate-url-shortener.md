@@ -406,6 +406,7 @@ As before, `param` does a bit of magic for us. `param` checks multiple sources o
 
 </div>
 
+
 <div class="pair">
 
 <div class="left">
@@ -448,6 +449,7 @@ we return the text to the user "uri not found".
 
 </div>
 
+</div>
 
 <div class="pair">
 
@@ -467,6 +469,7 @@ We proceed because the `Right` value means the Either value was a "success" idio
 
 </div>
 
+</div>
 
 <div class="pair">
 

@@ -229,6 +229,7 @@ div.blurb {
     padding: 5px 0px 5px 0px;
     max-width: 720px;
     background-color: #CCE;
+    clear: both;
 }
 
 div.blurb p {

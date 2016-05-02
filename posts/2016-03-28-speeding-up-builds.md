@@ -4,6 +4,8 @@ title: Speeding up the automated building and testing of our Haskell projects
 
 Alternate title: Arrest me for crimes against GNU Make.
 
+<iframe width="420" height="315" src="https://www.youtube.com/embed/ZwNWviK5z0Q?rel=0" frameborder="0" allowfullscreen></iframe>
+
 I work for a company that uses Haskell for its primary application. We're quite fond of having automatic builds fired off for each push to a branch and in our Github pull requests, so we were using [CircleCI](http://circleci.com) for our builds. Our circle.yml looked a bit like this initially:
 
 ```yaml

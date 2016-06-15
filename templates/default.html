@@ -2,31 +2,54 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>bitemyapp - $title$</title>
-        <link rel="stylesheet" type="text/css" href="/css/default.css" />
-    </head>
-    <body>
-        <div id="header">
-            <div id="logo">
-                <a href="/">bitemyapp</a>
-            </div>
-            <div id="navigation">
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/contact.html">Contact</a>
-                <a href="/projects.html">Projects</a>
-                <a href="/archive.html">Archive</a>
-                <a href="/rss.xml">RSS</a>
-                <a href="/atom.xml">Atom</a>
-                <a href="http://github.com/bitemyapp/" target="_blank">Github</a>
-                <a href="http://twitter.com/bitemyapp/" target="_blank">Twitter</a>
-                <a href="http://haskellbook.com" target="_blank">How to Learn Haskell</a>
-            </div>
-        </div>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>bitemyapp - $title$</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/css/default.css" /> -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"/>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css"/>
+    <link rel="stylesheet" href="/combo/1.18.13?/css/layouts/blog.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/new.css" />
+  </head>
+  <body>
 
-        <div id="content">
+    <div class="sidebar pure-u-1 pure-u-md-1-5">
+      <div class="header">
+        <h1 class="brand-title">bitemyapp</h1>
+        <h2 class="brand-tagline">I teach, learn, and write about Haskell.</h2>
+        
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="pure-button" href="http://purecss.io">Pure</a>
+            </li>
+            <li class="nav-item">
+              <a class="pure-button" href="http://yuilibrary.com">YUI Library</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+        <!-- <div id="header"> -->
+        <!--     <div id="logo"> -->
+        <!--         <a href="/">bitemyapp</a> -->
+        <!--     </div> -->
+        <!--     <div id="navigation"> -->
+        <!--         <a href="/">Home</a> -->
+        <!--         <a href="/about.html">About</a> -->
+        <!--         <a href="/contact.html">Contact</a> -->
+        <!--         <a href="/projects.html">Projects</a> -->
+        <!--         <a href="/archive.html">Archive</a> -->
+        <!--         <a href="/rss.xml">RSS</a> -->
+        <!--         <a href="/atom.xml">Atom</a> -->
+        <!--         <a href="http://github.com/bitemyapp/" target="_blank">Github</a> -->
+        <!--         <a href="http://twitter.com/bitemyapp/" target="_blank">Twitter</a> -->
+        <!--         <a href="http://haskellbook.com" target="_blank">How to Learn Haskell</a> -->
+        <!--     </div> -->
+        <!-- </div> -->
+
+        <div class="content pure-u-1 pure-u-md-3-4">
             <h1>$title$</h1>
 
             $body$

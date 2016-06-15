@@ -1,7 +1,6 @@
 /* fonts */
 @font-face {
-  font-family: 'Libre Baskerville';
-  src: local('Libre Baskerville'), url('/fonts/LibreBaskerville-Regular.otf') format('opentype');
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-style: normal;
   font-weight: normal;
 }

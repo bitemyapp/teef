@@ -173,3 +173,39 @@ h3 {
         bottom: 0;
     }
 }
+
+blockquote {
+  background-color: #DEF;
+  padding: 3px 10px 3px 10px;
+}
+
+/* Project listing and markers */
+project {
+  font-weight: bold;
+  font-size: 24px;
+  color: #006400;
+}
+project:after {
+  content: " => ";
+}
+ul.projects {
+  list-style-type: none;
+}
+ul.projects li {
+  margin-top: 15px;
+}
+
+/* end of post blurb  */
+div.blurb {
+    margin: 40px 40px 20px 40px;
+    padding: 5px 0px 5px 0px;
+    max-width: 720px;
+    background-color: #CCE;
+    clear: both;
+}
+
+div.blurb p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}

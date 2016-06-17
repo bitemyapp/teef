@@ -2,7 +2,9 @@
 title: Parsing data of varying structure in Haskell with Aeson
 ---
 
-Need to parse data with varying structure? Once again we resort to our old friend for handling non-determinism, the sum type.
+Need to parse data with varying structure? Once again we resort to our old friend for handling exclusive possibilities, the sum type.
+
+<!--more-->
 
 ``` haskell
 

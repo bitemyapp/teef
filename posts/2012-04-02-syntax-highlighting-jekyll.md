@@ -2,7 +2,9 @@
 title: Fixing syntax highlighting in Jekyll
 ---
 
-When I was getting the Jekyll version of my site rolling, I ran into some problems with how RedCloth, liquid, and pygments were interacting. Below is the error that was being caused:
+When I was getting the Jekyll version of my site rolling, I ran into some problems with how RedCloth, liquid, and pygments were interacting. What follows is the error that was caused.
+
+<!--more-->
 
 ```
 Liquid error: undefined method `join'

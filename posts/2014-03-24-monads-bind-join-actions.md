@@ -4,6 +4,8 @@ title: Monads, lifting, join, and side-effecting actions.
 
 While playing around with querying [ElasticSearch](http://www.elasticsearch.org/) I bumped into something that I hadn't really understood explicitly before about monads, nesting, and IO. Rather than blather on, I'm going to share a "literate" ghci session that demonstrates the point. Main editing change I made was to remove duplication in the output from querying the type `:t` in ghci.
 
+<!--more-->
+
 ``` haskell
 import Network.HTTP
 import Control.Monad (join, liftM)

@@ -2,6 +2,10 @@
 title: Functional Education
 ---
 
+I often get asked why I do or do not recommend a particular resource for learning Haskell. To save some time and to record more detail than I'll remember off the top of my head, I've written a round-up of the issues with various resources and books people use to learn Haskell.
+
+<!--more-->
+
 Rejected title: Focus on fixing things.
 
 # Here because you're wondering how to learn Haskell?

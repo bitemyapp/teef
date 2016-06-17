@@ -2,6 +2,10 @@
 title: Either and (,) in Haskell are not arbitrary
 ---
 
+Programmers don't understand that it doesn't matter _what_ the default target is for a type like `Either` as long as there is one and it never changes. I go into some detail and justification of a programming language design that makes decisions like this inherent to the structure of the type rather than author's (arbitrary and harmful) preference. The `Left` and `Right` of `Either` do not mean anything in and of themselves.
+
+<!--more-->
+
 Alternate title: Unnecessary particularity considered harmful
 
 Since I'd rather explain this in O(1) rather than O(twitter) time, this is a brief rundown of why the way type constructors and constructor classes work in Haskell is not arbitrary. The post is not a tutorial on higher-kinded types, constructor classes, or functor. Don't know these things? [I write stuff](http://haskellbook.com) so you can [learn 'em](https://github.com/bitemyapp/learnhaskell).

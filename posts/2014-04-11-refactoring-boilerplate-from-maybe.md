@@ -2,6 +2,10 @@
 title: Refactoring boilerplate from sum types
 ---
 
+A simple demonstration of extracting boilerplate from Aeson code handling a `Just` and a `Nothing` case of a `Maybe` value.
+
+<!--more-->
+
 ``` haskell
 instance ToJSON Query where    
   toJSON (TermQuery (Term termField termValue) (Just boost)) =

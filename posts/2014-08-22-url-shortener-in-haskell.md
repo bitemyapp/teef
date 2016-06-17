@@ -2,7 +2,9 @@
 title: URL Shortener in 43 lines of Haskell
 ---
 
-Written in Scotty. Code is really bad, forgive me.
+Written in Scotty. The code is not great.
+
+<!--more-->
 
 ```haskell
 module Main where

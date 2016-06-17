@@ -2,7 +2,9 @@
 title: February Book Log
 ---
 
-It's Valentine's Day 2013 and since January 2013 I've read:
+It's Valentine's Day 2013 and since January 2013 I've read the following books.
+
+<!--more-->
 
 ## Social Media Marketing: An Hour a Day - Dave Evans
 

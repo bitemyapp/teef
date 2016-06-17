@@ -2,6 +2,10 @@
 title: Aeson with types that have lots of "maybes", v2
 ---
 
+The previous edition of this post was cleaned up by a suggestion from another Haskeller. I share it with you here.
+
+<!--more-->
+
 # Previously
 
 [The last article this is riffing off of](/posts/2014-07-30-aeson-with-uncertainty.html)

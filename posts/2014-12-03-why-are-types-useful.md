@@ -2,6 +2,10 @@
 title: Why are types useful?
 ---
 
+This is a simple follow-along with a Python tutorial, with my version in Haskell and a running commentary. I wrote this partly to hint at why one might want a statically typed language regardless of how one thinks prototyping is best done. It was also partly cathartic.
+
+<!--more-->
+
 Rejected title: OOP is a Ford Pinto.
 
 [This is a respin.](http://inventwithpython.com/blog/2014/12/02/why-is-object-oriented-programming-useful-with-an-role-playing-game-example/)

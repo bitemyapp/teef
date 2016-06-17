@@ -2,7 +2,9 @@
 title: OS X fsevent fatal error 'stdio.h' file not found
 ---
 
-Getting the following error on Mac OS X?
+Getting the following error on Mac OS X? Read on.
+
+<!--more-->
 
 ```
 fsevent/fsevent_watch.c:1:10: fatal error: 'stdio.h' file not found

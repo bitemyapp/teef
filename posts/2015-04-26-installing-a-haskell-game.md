@@ -2,6 +2,10 @@
 title: Building a Haskell game
 ---
 
+Sometimes building a package with dependencies on OpenGL can be a little confusing for people new to Haskell. I will use a simple game on Hackage as an exercise for demonstrating how you might do this on Ubuntu. Note: this was written before [Stack](http://haskellstack.org) was a thing.
+
+<!--more-->
+
 This is as much about demonstrating how to show your process as it is about how to install a game.
 
 So our objective is to build and run a game named [Shu-thing](http://hackage.haskell.org/package/Shu-thing) on Hackage.

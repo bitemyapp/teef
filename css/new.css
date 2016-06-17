@@ -225,6 +225,10 @@ div.content ul {
     padding-left: 0px;
 }
 
+ul.post-listing {
+    margin-top: 3em;
+}
+
 li.post-link {
     margin: 7px 0px 7px 0px;
     list-style-type: none;
@@ -234,7 +238,7 @@ li.post-link p {
     max-width: 50em;
 }
 
-li.post-link a {
+li.post-link > a {
     font-size: 1.5em;
     font-weight: bold;
     /* color: #222; */
@@ -315,6 +319,10 @@ pre {
 }
 
 pre code {
-    font-family: 'Ubuntu Mono', monospace;
     font-size: 16px !important;
+}
+
+code {
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-weight: bold;
 }

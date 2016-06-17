@@ -2,7 +2,11 @@
 title: Parsing and rendering templates in Clojure &amp; Haskell
 ---
 
-[yogthos'](https://github.com/yogthos) code for a parser I was to replicate in Haskell
+I rewrote somewhat difficult to understand templating code that was originally in Clojure into much simpler Haskell and yielded a large performance benefit for my trouble.
+
+<!--more-->
+
+[yogthos'](https://github.com/yogthos) code for a parser I was to replicate in Haskell:
 
 ```clojure
 (ns parser)

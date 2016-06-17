@@ -4,6 +4,8 @@ title: Node.js, Requests, Connections, ending, and closing
 
 You close connections, you end requests.
 
+<!--more-->
+
 ``` javascript
 request.end();
 ```

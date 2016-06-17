@@ -2,6 +2,10 @@
 title: Why we don't chuck our readers into web apps
 ---
 
+Haskell programmers that often forget how hard it was to learn and use Haskell. They also forget that without the benefit of a code example that does precisely what one wants, it can be nearly impossible for someone to make forward progress unless they have a solid foundation in the language itself. We justify how this reality influences the way we write the [Haskell Programming from first principles](http://haskellbook.com) book.
+
+<!--more-->
+
 Alternate title: Making web apps considered harmful
 
 My co-author, Julie, and I are writing a book for learning Haskell. We're writing it with the goal of getting anyone, no matter their background in programming, from no knowledge of Haskell to an intermediate level with as much real, solid knowledge of how to use and read the language as possible, so that they can go on to use Haskell for whatever purposes they are most interested in.

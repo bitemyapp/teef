@@ -4,6 +4,8 @@ title: Fixing arrow keys in iTerm and Terminal.app for Mac OS X
 
 I am a user of irssi over GNU Screen + ssh as well as locally, and I tend to use Emacs style text movements in bash, so need my ctrl and alt/option keys to work more or less as they do in Linux.
 
+<!--more-->
+
 To traverse by word (ctrl-arrow) in bash you need to set the following escape sequences in your key/keyboard settings for your terminal:
 
 ```

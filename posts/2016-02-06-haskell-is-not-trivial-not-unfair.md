@@ -2,6 +2,10 @@
 title: Haskell is not trivial, but it's not unfair like Dark Souls either
 ---
 
+Someone wrote a blog post where they have trouble querying a web API in Haskell code. I walk through some examples for how to do so with increasing sophistication building up to some simple uses of `lens` and `lens-aeson`.
+
+<!--more-->
+
 Alternate title: Another brutal fisking for which I'll forever be remembered as a monster
 
 ### Don't be a dick and don't harass the original author please. They were just sharing their experience.

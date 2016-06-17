@@ -4,6 +4,8 @@ title: Nested user-defined types with Aeson
 
 Sometimes one knows only part of the structure to be parsed out of JSON ahead of time, with some of that structure being defined by a user or consumer of the API. The solution to this in general and when using Aeson to make the wrapper type parametric.
 
+<!--more-->
+
 ``` haskell
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE OverloadedStrings #-}

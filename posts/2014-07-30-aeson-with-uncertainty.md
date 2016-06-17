@@ -2,15 +2,15 @@
 title: Aeson with types that have lots of "maybes"
 ---
 
+Aeson is a real joy to use once you get into the swing of things, but there are some patterns out there that end-users are left to discover for themselves. One of those is how to deal with data that has a lot of instances of the `Maybe` type.
+
+<!--more-->
+
 # I've refactored and cleaned up this code, look at the do-over.
 
 [See here for the new article](/posts/2014-07-31-aeson-with-uncertainty-revised.html)
 
 * * * * *
-
-Aeson is a real joy to use once you get into the swing of things, but
-there are some patterns out there that end-users are left to discover for
-themselves.
 
 First, a trivial example:
 

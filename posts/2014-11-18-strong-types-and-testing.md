@@ -2,6 +2,10 @@
 title: Strong types and testing - in Haskell
 ---
 
+I respin an article originally written in Scala into Haskell, then veer off into the stratosphere.
+
+<!--more-->
+
 This is a respin of [Levi Notik's article](http://levinotik.com/strong-types-and-their-impact-on-testing/), Levi's was in Scala.
 
 Quoting Levi Notik here because I whole-heartedly agree with him

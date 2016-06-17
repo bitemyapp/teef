@@ -2,9 +2,13 @@
 title: Code refactoring with pointfree style demoed via updateMap
 ---
 
+I answered a question on Stack Overflow that I thought might be worth sharing here so that others might get an idea of how to refactor code into point-free style.
+
+<!--more-->
+
 Original link:
 
-http://codereview.stackexchange.com/questions/57843/update-map-in-haskell/57850#57850
+[Update map in Haskell](http://codereview.stackexchange.com/questions/57843/update-map-in-haskell/57850#57850)
 
 Their question:
 

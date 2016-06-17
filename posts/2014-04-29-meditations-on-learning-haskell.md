@@ -4,6 +4,8 @@ title: Meditations on learning Haskell
 
 This is an extraction of a conversation between multiple Haskellers in an IRC channel. I'm not identifying who said what and the ordering will be more topical than temporal. I'll add annotations for context as appropriate. I edited liberally.
 
+<!--more-->
+
 The letters are individual people so you can follow the conversation. I did this less for anonymity and more to emphasize the ideas and experiences rather than the people sharing them.
 
 ## C

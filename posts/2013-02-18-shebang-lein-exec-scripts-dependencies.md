@@ -2,6 +2,10 @@
 title: Using shebang and lein-exec to write Clojure scripts that can use dependencies
 ---
 
+A brief demonstration of how to run Clojure programs like scripts with `leiningen`.
+
+<!--more-->
+
 ``` bash
 #!/home/callen/bin/lein exec
 ```

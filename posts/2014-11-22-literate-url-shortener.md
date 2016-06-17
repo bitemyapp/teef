@@ -2,6 +2,10 @@
 title: A URL shortener made literate
 ---
 
+This is a quasi-literate version of the very simple URL shortener I wrote in Haskell with Scotty.
+
+<!--more-->
+
 ### This is a literate respin of an older post of mine
 
 <a href="/posts/2014-08-22-url-shortener-in-haskell.html">The original code listing is here</a>

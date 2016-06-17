@@ -2,6 +2,10 @@
 title: Speeding up the automated building and testing of our Haskell projects
 ---
 
+I'm a big fan of using build servers to continually build and test the code I'm working on. I'm also a bit of a latency nut, so I like our builds to be _responsive_. To that end, I migrating our company away from CircleCI and yielded a 10x improvement to build times for my trouble.
+
+<!--more-->
+
 Alternate title: Arrest me for crimes against GNU Make.
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/ZwNWviK5z0Q?rel=0" frameborder="0" allowfullscreen></iframe>

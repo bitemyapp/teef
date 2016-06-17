@@ -209,3 +209,10 @@ div.blurb p {
     margin-right: auto;
     max-width: 80%;
 }
+
+.ascii-bear {
+    float: right;
+    margin: 10px;
+    font-family: monospace; /* "Ubuntu Mono",  */
+    font-size: 4px;
+}

@@ -211,8 +211,96 @@ div.blurb p {
 }
 
 .ascii-bear {
-    float: right;
     margin: 10px;
     font-family: monospace; /* "Ubuntu Mono",  */
-    font-size: 4px;
+    font-size: 6px;
+}
+
+div.content ul {
+    padding-left: 0px;
+}
+
+li.post-link {
+    margin: 7px 0px 7px 0px;
+    list-style-type: none;
+}
+
+li.post-link a {
+    font-size: 1.5em;
+    font-weight: bold;
+    /* color: #222; */
+}
+
+
+/* Source code stuff */
+
+.sourceCode {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+pre.sourceCode {
+    padding: 3px 10px 3px 10px;
+    background-color: #223;
+}
+
+table.sourceCode, tr.sourceCode,
+td.lineNumbers, td.sourceCode,
+table.sourceCode pre {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    border: none;
+}
+td.lineNumbers {
+    border-right: 1px solid #AAAAAA;
+    text-align: right;
+    color: #AAAAAA;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+td.sourceCode { padding-left: 5px; }
+
+/* main text */
+code.sourceCode { color: #EEE; }
+/* keyword */
+.sourceCode span.kw { color: #A04278; font-weight: bold; }
+/* import target, function name, constructors */
+.sourceCode span.dt { color: #38Ae31; }
+/* numbers/literals? */
+.sourceCode span.dv { color: #6eA1A1; }
+/* */
+.sourceCode span.bn { color: #40a070; }
+/* */
+.sourceCode span.fl { color: #40a070; }
+/* */
+.sourceCode span.ch { color: #4070a0; }
+/* string */
+.sourceCode span.st { color: #63A6f0; }
+/* comments */
+.sourceCode span.co { color: #60a0b0; font-style: italic; }
+/* operators, accessors */
+.sourceCode span.ot { color: #A0F0A0; }
+/* */
+.sourceCode span.al { color: red; font-weight: bold; }
+/* function */
+.sourceCode span.fu { color: #a10cac; }
+/* */
+.sourceCode span.re { }
+/* */
+.sourceCode span.er { color: red; font-weight: bold; }
+
+
+/* non-haskell code */
+
+pre {
+    padding: 3px 10px 3px 10px;
+    background-color: #223;
+    color: #EEE;
+}
+
+pre code {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 16px !important;
 }

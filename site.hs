@@ -3,6 +3,9 @@
 import Data.Monoid (mappend)
 import Hakyll
 import Hakyll.Core.Configuration
+import Text.Blaze.Html.Renderer.String (renderHtml)
+import Text.Blaze.Html ((!), toHtml, toValue)
+import qualified Text.Blaze.Html5 as H
 
 config :: Configuration
 config = defaultConfiguration
@@ -16,6 +19,28 @@ feedConfig = FeedConfiguration
      , feedAuthorEmail = "cma@bitemyapp.com"
      , feedRoot        = "http://bitemyapp.com/"
      }
+
+teaserCtx = teaserField "teaser" "content" `mappend` postCtx
+
+postCtxWithTags :: Tags -> Context String
+postCtxWithTags tags = tagsField "tags" tags `mappend` postCtx
+
+-- postCtxWithTags :: Tags -> Context String
+-- postCtxWithTags tags = renderTagList' "tags" (const $ fromFilePath "error/404") tags `mappend` postCtx
+
+
+
+-- | Render tags as HTML list with links
+renderTagList' :: String
+               -- ^ Destination key
+               -> (String -> Identifier)
+               -- ^ Produce a link for a tag
+               -> Context String
+renderTagList' destination makeUrl =
+    field destination $ \item -> renderTags <$> getTags (itemIdentifier item)
+  where
+    renderTags :: [String] -> String
+    renderTags = renderHtml . mconcat . map (H.li . toHtml)
 
 main :: IO ()
 main = hakyllWith config $ do
@@ -45,12 +70,24 @@ main = hakyllWith config $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
+    tags <- buildTags "posts/*" (fromCapture "tags/*.html")
+
+    tagsRules tags $ \tag pattern -> do
+      let title = "Posts tagged \"" ++ tag ++ "\""
+      route idRoute
+      compile $ do
+        posts <- recentFirst =<< loadAll pattern
+        let ctx = constField "title" title
+                  `mappend` listField "posts" postCtx (return posts)
+                  `mappend` defaultContext
+        makeItem "" >>= loadAndApplyTemplate "templates/tag.html" ctx >>= loadAndApplyTemplate "templates/default.html" ctx >>= relativizeUrls
+
     match "posts/*" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
+            >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags tags)
             >>= saveSnapshot "content"
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags tags)
             >>= relativizeUrls
 
     create ["rss.xml"] $ do
@@ -89,8 +126,8 @@ main = hakyllWith config $ do
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Home"                `mappend`
+                    listField "posts" teaserCtx (return posts) `mappend`
+                    constField "title" "Home"                  `mappend`
                     defaultContext
 
             getResourceBody

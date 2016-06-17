@@ -1,6 +1,13 @@
 ---
 title: How to use UUID values with Persistent and Yesod
+tags: practical, persistent, yesod, haskell
 ---
+
+Some people find it trickier to store UUID values in their database with Persistent or to use UUID values in a Yesod web application than is really necessary. Here I'll share some code from my work that demonstrates some patterns in applications that use Persistent or Yesod which should make it easier.
+
+<!--more-->
+
+The context for this post can be found in these two links:
 
 > Replying to: [Jezen Thomas writing about using UUIDs in Yesod](https://jezenthomas.com/using-uuids-in-yesod/) <br>
 > Prior art: [Michael Xavier on UUID columns in Persistent ](http://michaelxavier.net/posts/2015-04-14-Adding-a-UUID-Column-to-a-Persistent-Table.html)

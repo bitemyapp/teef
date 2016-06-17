@@ -89,6 +89,10 @@ h3 {
     padding: 2em 1em 0;
 }
 
+div.post p {
+    max-width: 50em;
+}
+
 .post {
     padding-bottom: 2em;
 }
@@ -175,6 +179,7 @@ h3 {
 }
 
 blockquote {
+  max-width: 40em;
   background-color: #DEF;
   padding: 3px 10px 3px 10px;
 }
@@ -225,6 +230,10 @@ li.post-link {
     list-style-type: none;
 }
 
+li.post-link p {
+    max-width: 50em;
+}
+
 li.post-link a {
     font-size: 1.5em;
     font-weight: bold;
@@ -236,6 +245,10 @@ li.post-link a {
 
 .sourceCode {
     font-family: 'Ubuntu Mono', monospace;
+}
+
+div.sourceCode {
+    max-width: 50em;
 }
 
 pre.sourceCode {
@@ -295,6 +308,7 @@ code.sourceCode { color: #EEE; }
 /* non-haskell code */
 
 pre {
+    max-width: 50em;
     padding: 3px 10px 3px 10px;
     background-color: #223;
     color: #EEE;

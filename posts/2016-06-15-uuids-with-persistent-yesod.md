@@ -13,7 +13,7 @@ This code is adapted from stuff we've written at work.
 
 ## Instances
 
-Radioactive dumping ground for orphan instances. Adding the instances makes Persistent understand how to serialize and deserialize the UUID type. The orphans can be avoided if you use a `newtype`. The partiality is us being somewhat irresponsible and assuming we've guarded for UUID correctness at the boundaries.
+Radioactive dumping ground for orphan instances. Adding the instances makes Persistent understand how to serialize and deserialize the UUID type. The orphans can be avoided if you use a `newtype`.
 
 ```haskell
 -- Note we're taking advantage of

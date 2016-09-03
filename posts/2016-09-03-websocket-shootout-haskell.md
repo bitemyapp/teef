@@ -17,7 +17,7 @@ I didn't do anything special, this was the first pass version. First, the result
 
 - C++: ![C++ benchmark results](/images/cpp-ws-results.png)
 
-And then Haskell:
+- And now Haskell:
 
 ![Haskell benchmark results](/images/haskell-ws-results.png)
 

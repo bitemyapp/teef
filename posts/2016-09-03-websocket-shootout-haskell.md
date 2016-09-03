@@ -21,7 +21,7 @@ And then Haskell:
 
 ![Haskell benchmark results](/images/haskell-ws-results.png)
 
-For memory usage, Haskell's memory usage was more average at ~1.2gb, but still quite good.
+I would like to particularly note how _flat_ and consistent the RTT times for Haskell were. Compare to Rust's 10-244ms stretch at the max connection count. For memory usage, Haskell's memory usage was more average at ~1.2gb, but still quite good.
 
 Here's the source to the Haskell version at time of writing:
 

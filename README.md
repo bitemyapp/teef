@@ -1,7 +1,6 @@
 # Working on the content locally
 
 ```
-cabal install
-cabal build
+stack build
 make watch
 ```

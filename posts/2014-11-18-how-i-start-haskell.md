@@ -1,5 +1,5 @@
 ---
-title: How I Start: Haskell
+title: "How I Start: Haskell"
 ---
 
 I wrote an article for [howistart](https://howistart.org). I've since updated it to use [Stack](http://haskellstack.org) as well.

@@ -17,9 +17,7 @@ I didn't do anything special, this was the first pass version. First, the result
 
 - C++: ![C++ benchmark results](/images/cpp-ws-results.png)
 
-- And now Haskell:
-
-![Haskell benchmark results](/images/haskell-ws-results.png)
+- And now Haskell: ![Haskell benchmark results](/images/haskell-ws-results.png)
 
 I would like to particularly note how _flat_ and consistent the RTT times for Haskell were. Compare to Rust's 10-244ms stretch at the max connection count. For memory usage, Haskell's memory usage was more average at ~1.2gb, but still quite good.
 

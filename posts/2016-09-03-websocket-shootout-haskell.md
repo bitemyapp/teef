@@ -175,14 +175,10 @@ Spawn a `Broadcast`, pass the handle on to `wsApp`, run it with the provided ser
 
 ### Some thoughts
 
-If I haven't misunderstood or misbenchmarked something[1], it's going to be extremely hard for any language runtime to beat GHC Haskell on an I/O heavy benchmark like this.
-
-[1]: I did! Broadcast was dropping messages the whole time!
-
 - [A reddit conversation on the tradeoffs of Rust's stack model vs. GHC's](https://www.reddit.com/r/haskell/comments/1wm9n4/question_about_stacks_in_haskell_and_rust/)
 
 Erlang is the only runtime competitive on per-thread (process in their lingo) overhead, but they bite the dust on message send. MVar take/put pairing is ~25-40ns, you're eating at least 1,000 ns in Erlang. It's possible a custom Erlang implementation (Cowboy?) could do a better job here, but I'm not sure how to do broadcast especially efficiently in Erlang.
 
 Asking how to efficiently broadcast to many Erlang processes on the mailing list [gets you smarmy answers](http://erlang.org/pipermail/erlang-questions/2011-May/058307.html).
 
-I was initially disappointed I didn't get an excuse to optimize any of the Haskell code. It was limited only by the number of TCP connections I could bind, I had 2/3s of my 95th percentile RTT to burn yet. I messed with ulimit and the like a bit, but to really uncap it I'd need to change the client to connect to multiple IP addresses so I can use more TCP connections.
+I was initially disappointed I didn't get an excuse to optimize any of the Haskell code. It was limited only by the number of TCP connections I could bind, I had 2/3s of my 95th percentile RTT to burn yet. I messed with ulimit and the like a bit, but to really uncap it I'd need to change the client to connect to multiple IP addresses so I can use more TCP connections. Now I know it was because `Broadcast` was dropping messages and not tickling the slow parts as much as an implementation that forces broadcasts to all clients.

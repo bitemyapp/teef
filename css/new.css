@@ -229,8 +229,13 @@ div.blurb {
     margin: 40px 40px 20px 40px;
     padding: 5px 0px 5px 0px;
     max-width: 720px;
-    background-color: #CCE;
+    /* background-color: #CCE; */
+    background-color: #e5e5f6;
     clear: both;
+}
+
+div.blurb a {
+    color: #1e4c6a;
 }
 
 div.blurb p {

@@ -9,9 +9,9 @@ As a break from usual, I thought I would review Zed Shaw's Learn Python the Hard
 
 ## A note from the reviewer
 
-This review will be self-indulgent. I will make copious comparisons to _Haskell Programming from First Principles_ as I'd spent the last few years immersed in working on it.
+This review will be self-indulgent. I make copious comparisons with _Haskell Programming from First Principles_.
 
-I write about and primarly use Haskell in my work now. I used Python for about 7 years of my 10 year career so I am comfortable with Python-the-language even if I don't keep up with the community any longer.
+I write about and primarily use Haskell in my work now. I used Python for about 7 years of my 10 year career so I am comfortable with Python-the-language even if I don't keep up with the community any longer.
 
 My final conclusions and recommendation are at the bottom of this review!
 

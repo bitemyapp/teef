@@ -52,7 +52,7 @@ Unfortunately, the formatting of the table of contents is broken in the ebook ve
 
 ## Preface
 
-Zed is right here about learning to code and instruction. I haven't said much about it publicly before this, but his work on Learn Python the Hard Way heavily influenced my earliest approaches to pedagogy and how I thought about the Haskell Book. Much changed as Julie and I learned more about what worked with reviewers, but the basic principle of guiding learners through cumulative exercises is extremely important.
+Zed is right here about learning to code and the importance of instruction. I haven't said much about it publicly before this, but his work on Learn Python the Hard Way heavily influenced my earliest approaches to pedagogy and how I thought about the Haskell Book. Much changed as Julie and I learned more about what worked with reviewers, but the basic principle of guiding learners through cumulative exercises is extremely important.
 
 ## The Hard Way Is Easier
 

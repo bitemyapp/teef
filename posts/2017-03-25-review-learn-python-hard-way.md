@@ -261,6 +261,16 @@ The book includes two bits of commentary separating the 52nd exercise and the co
 
 These are the exercises sectioned under "55". This is the content I noted had a very different presentation in the table of contents of the print and ebook variants of LPTHW. The sequence introduces individual command line applications and builds on them iteratively. Examples are given for Linux/OS X and Windows in each exercise. Learning basic file and directory manipulation is the priority of this appendix.
 
+## A note on Python 2 vs. 3
+
+I've reviewed the third edition of this book which uses Python 2 throughout. The next, unreleased fourth edition of the book will be using Python 3. It shouldn't be an impediment for a beginner to learn Python 2 using this book and then move on to using Python 3 afterward, but you should be aware of this.
+
+At present if you go to the purchase page for the ebook on Zed Shaw's website, it'll say
+
+>Learn Python The Hard Way, 3rd/4th Edition For $29.99
+
+I _believe_ this means purchasers of the ebook will get the eventual fourth edition when it is released even if they're just buying the third for now. The downloads in my account for Learn Python the Hard Way included videos and the PDF for the third edition only. If you are uncertain and care a great deal about this, please ask Zed himself to confirm.
+
 # My conclusions
 
 I think this book is positively influenced by Zed's background as a painter and musician. I believe he's studied education as a domain as well and it shows in his work.

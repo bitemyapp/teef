@@ -27,7 +27,7 @@ I bought the physical version from Amazon and the ebook from Zed Shaw directly. 
 
 The margins in the layout are good enough. The main problem with the paper version is that it is a paperback with a typical perfect-bound binding. As a result, the book cannot stay open even on the 88th page depicted in the photo above. Page 88 of the print book was not at all the same content as the ebook. Page 88 in the print book was halfway through Exercise 25, titled "Even More Practice." Page 88 in the ebook was in Exercise 17, titled "More Files." Exercise 25 in the book was located at page 114. The ebook appears to use a slightly less compact layout than the print book, so the page difference will not necessarily be a fixed constant.
 
-The content itself seemed identical, but there were some formatting differences.
+The content itself seemed identical, but there were some formatting differences. Here's an example using the common student questions from Exercise 25:
 
 <img src="/images/lpthw_phys_fmt.jpg" alt="Learn Python the Hard Way physical formatting" style="width: 540px;"/>
 

@@ -3,10 +3,6 @@ title: A review of Learn Python the Hard Way, 3rd ed
 tags: python, practical, education
 ---
 
-## Heads up: this post is being written and re-deployed as I go.
-
-### You'll want to force-refresh (shift-F5) or your operating system's equivalent periodically
-
 As a break from usual, I thought I would review Zed Shaw's Learn Python the Hard Way. I've had several beginners to programming ask me what they should use to learn and Shaw's book frequently comes up. I've looked over his materials before when they were a free website but I wanted to see what the current published version was like.
 
 <!--more-->

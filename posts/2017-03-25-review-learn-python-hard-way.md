@@ -72,7 +72,7 @@ Zed warns against some common but faulty programmer advice. I largely agree with
 
 >If a programmer tells you to use vim or emacs, just say ”no.” These editors are for when you are a better programmer.
 
-Practice some charity and ignore the, "for when you are a better programmer" bit. The are two important reasons to take this and the rest of his advice seriously.
+Practice some charity and ignore the, "for when you are a better programmer" bit. There are two important reasons to take this and the rest of his advice seriously.
 
 1. You cannot conquer all things at once. My coauthor Julie essentially learned Linux, the terminal, Git, LaTeX, and Haskell all at once when she first joined me on Haskell Book. I do _not_ recommend doing this. Load-balancing your stress levels is important when you are a beginner.
 

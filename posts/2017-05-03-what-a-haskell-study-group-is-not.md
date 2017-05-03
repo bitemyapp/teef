@@ -1,6 +1,6 @@
 ---
 title: What a Haskell Study Group is Not
-tags: python, practical, education
+tags: haskell, education
 ---
 
 This article is by Steven Syrek. I'm reposting it here because I endorse what he's saying. I believe Steven brings a valuable perspective on the [haskell book](http://haskellbook.com), reading groups, and education in general.

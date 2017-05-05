@@ -5,6 +5,10 @@ tags: haskell, education
 
 This article is by [Steven Syrek](https://twitter.com/sjsyrek). I'm reposting it here because I endorse what he's saying. I believe Steven brings a valuable perspective on the [haskell book](http://haskellbook.com), reading groups, and education in general.
 
+Steven posted [this article on his Medium](https://medium.com/@sjsyrek/what-a-haskell-study-group-is-not-470f4aeb9673).
+
+He has also written some [extended notes on pedagogy tied to this post here](https://medium.com/@sjsyrek/some-notes-on-haskell-pedagogy-de43281b1a5c).
+
 <!--more-->
 
 <hr>

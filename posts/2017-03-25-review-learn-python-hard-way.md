@@ -92,7 +92,7 @@ After the picture(s) of the code in a text editor, both versions of the book sho
 
 Anticipating a common typographical error in the code, Zed points out where the error might've happened and what the error would look like. He also anticipates and informs the reader on how to correct a potential problem with ASCII encodings.
 
-Exercise 1 is bookended by study drills and common questions asked by students. I was able to two of the three drills in Zed's instructions. I'm not sure what Zed was asking for with the first study drill, which is a little worrying as beginners will be using this. I will assume it's something obvious that I missed.
+Exercise 1 is bookended by study drills and common questions asked by students. I was able to do two of the three drills in Zed's instructions. I'm not sure what Zed was asking for with the first study drill, which is a little worrying as beginners will be using this. I will assume it's something obvious that I missed.
 
 The common student questions occur at the end of the exercises throughout the book. They are intended to catch failure modes. Zed's approach here is more modular than the Haskell Book. I think this works because the individual exercises are brief and typically last a handful of pages. In HPFFP we treated it more like a linear stream of consciousness and address anticipated problems in media res.
 

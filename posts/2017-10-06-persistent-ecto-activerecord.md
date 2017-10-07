@@ -316,12 +316,6 @@ tagsForPosts postKeys =
                            -> DB [(Key Post, Entity Tag)]
         unValueThePostKeys = (fmap . fmap) (first E.unValue)
 
-updateMap :: (Ord k) => (v -> v) -> k -> v -> Map k v -> Map k v
-updateMap f k v map =
-  if M.member k map
-  then M.adjust f k map
-  else M.insert k v map
-
 postsWithCommentsAndTags :: DB (Map
                                 (Key Post)
                                 (Entity Post, [Entity Comment], [Entity Tag]))
@@ -347,8 +341,8 @@ postsWithCommentsAndTags = do
     postsInitialMap postsAndComments =
       foldl' insertPostCom M.empty postsAndComments
       where insertPostCom m (post, comment) =
-              updateMap
-              (\(post, comments, tags) -> (post, comment : comments, tags))
+              M.insertWith
+              (\ _ (post, comments, tags) -> (post, comment : comments, tags))
               (entityKey post) (post, [comment], []) m
 
     addTagsToMap :: [(Key Post, Entity Tag)]

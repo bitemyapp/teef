@@ -34,6 +34,7 @@ h3 {
 }
 
 .sidebar {
+    /* width: 25%; */
     background: rgb(61, 90, 180);
     color: #fff;
 }

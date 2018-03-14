@@ -90,6 +90,8 @@ I've lightly edited his words here:
 
 >I never messed with USB mics. I've exclusively had XLR microphones since I got started back in 2011. My little brother has a Blue Icicle and that is not the best experience. Constantly picking up his keyboard.
 
+>If you can pick you a Shure SM58 for 50 bucks like I did, the thing is nigh indestructible, great deal. The only reason mine doesn't work is because I broke a solder point and I didn't want to repair it.
+
 My reply:
 
 >FWIW I tried setting the gain low on my Blue Yeti, it wasn't enough. I had to scream at the mic when the gain was low enough not to pick up noise.

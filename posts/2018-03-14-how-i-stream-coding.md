@@ -98,6 +98,6 @@ My reply:
 
 >FWIW I tried setting the gain low on my Blue Yeti, it wasn't enough. I had to scream at the mic when the gain was low enough not to pick up noise.
 
-~At time of writing, it doesn't seem like the Blue Spark is available any more.~ (See above about the model refresh)
+<s>At time of writing, it doesn't seem like the Blue Spark is available any more.</s> (See above about the model refresh)
 
 It's possible an XLR condenser mic with a mixer could be okay for your purposes, but most of the Blue mics are USB now which severely limits their usefulness. Not my bag of chips but I wanted to include a different viewpoint.

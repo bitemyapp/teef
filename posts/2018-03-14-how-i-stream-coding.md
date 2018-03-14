@@ -81,3 +81,17 @@ ffmpeg -i $VIDEO_FILE_AUDIO_CLEAN -i $VIDEO_FILE_VIDEO -qscale:v $QSCALE $VIDEO_
 ```
 
 If you've got better kit/scripts than I've mentioned here, please speak up! I'm always up for improving this stuff. Please contact me if you need clarification on something I've mentioned here or if you have questions.
+
+### Comment on microphones from my friend Tyler on Twitter
+
+I've lightly edited his words here:
+
+>I take issue with your statement about blue microphones. I had a Shure SM58 and a blue spark and I liked the blue much better than the SM58. I prefer condenser microphones over dynamic microphones, I just run the gain as low as I can to make it not pick up the background. USB mics are trash.
+
+>I never messed with USB mics. I've exclusively had XLR microphones since I got started back in 2011. My little brother has a Blue Icicle and that is not the best experience. Constantly picking up his keyboard.
+
+My reply:
+
+>FWIW I tried setting the gain low on my Blue Yeti, it wasn't enough. I had to scream at the mic when the gain was low enough not to pick up noise.
+
+At time of writing, it doesn't seem like the Blue Spark is available any more. It's possible an XLR condenser mic with a mixer could be okay for your purposes, but most of the Blue mics are USB now which severely limits their usefulness. Not my bag of chips but I wanted to include a different viewpoint.

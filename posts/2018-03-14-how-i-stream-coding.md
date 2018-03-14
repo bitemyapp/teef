@@ -92,8 +92,12 @@ I've lightly edited his words here:
 
 >If you can pick you a Shure SM58 for 50 bucks like I did, the thing is nigh indestructible, great deal. The only reason mine doesn't work is because I broke a solder point and I didn't want to repair it.
 
+>It looks like they refreshed the Blue Spark with a high pass filter and a -20db pad.
+
 My reply:
 
 >FWIW I tried setting the gain low on my Blue Yeti, it wasn't enough. I had to scream at the mic when the gain was low enough not to pick up noise.
 
-At time of writing, it doesn't seem like the Blue Spark is available any more. It's possible an XLR condenser mic with a mixer could be okay for your purposes, but most of the Blue mics are USB now which severely limits their usefulness. Not my bag of chips but I wanted to include a different viewpoint.
+~At time of writing, it doesn't seem like the Blue Spark is available any more.~ (See above about the model refresh)
+
+It's possible an XLR condenser mic with a mixer could be okay for your purposes, but most of the Blue mics are USB now which severely limits their usefulness. Not my bag of chips but I wanted to include a different viewpoint.

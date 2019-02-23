@@ -111,7 +111,7 @@ Deeply pedagogically unsound. The monkey-see monkey-do process is a warm-up, not
 
 Leans way too much on Functor/Applicative/Monad instances that lend themselves to bad intuitions. Does nothing to attempt to alienate these bad intuitions.
 
-The material often bores learners and leaves them feeling like they're not "getting" it. This because they're being "talked at" and demo'd to. They're not engaging with and solving problems.
+The material often bores learners and leaves them feeling like they're not "getting" it. This is because they're being "talked at" and demo'd to. They're not engaging with and solving problems.
 
 Sense of accomplishment is critical to keeping learners going. They're not always going to be 100% comfortable with their comprehension of something and they probably never will or should, but they should have a trail of completed exercises in their wake when they start attacking the hard stuff so they don't give up.
 

@@ -16,7 +16,7 @@ In October 2017, Julie demanded that I enter into negotiations with her over the
 - We would continue as equal partners, but there's a structured agreement in place for the book's completion and management.
 - I would sell Julie my rights in the book or vice versa.
  
-There was a lot of back and forth and it took nearly a year of negotiations before we arrived at an agreement. Work on the book was halted because we could not agree and our working relationship had soured. The final agreement that we arrived at was based largely on the terms Julie demanded. It was supposed to be an amicable resolution to our problems. Julie got what she wanted and would benefit from the book's final publication and the readers would finally get a finished product. To see Julie attack me online with spiteful insinuations and untruthful comments about me and what happened with the book after she voluntarily signed the agreement is upsetting.
+There was a lot of back and forth and it took nearly a year of negotiations before we arrived at an agreement. Work on the book was halted because we could not agree and our working relationship had soured. The final agreement that we arrived at was based largely on the terms Julie demanded. It was supposed to be an amicable resolution to our problems. Julie got what she wanted and would benefit from the book's final publication and the readers would finally get a finished product. The agreement included a confidentiality clause as well. To see Julie attack me online with spiteful insinuations and untruthful comments about me and what happened with the book after she voluntarily signed the agreement is upsetting.
  
 ## What happens now
  
